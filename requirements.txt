@@ -1,0 +1,31 @@
+# Core dependencies for AI Employee System
+
+# For AI client
+openai
+
+# For file system operations
+pathlib
+
+# For HTTP requests (if needed for MCP servers)
+requests
+
+# For environment variables
+python-dotenv
+
+# For Playwright (for WhatsApp watcher)
+playwright
+
+# For email handling
+imaplib2
+
+# For system monitoring
+psutil
+
+# For structured logging
+structlog
+
+# For date/time operations
+python-dateutil
+
+# For configuration files
+pyyaml

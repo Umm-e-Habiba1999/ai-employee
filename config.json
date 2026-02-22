@@ -1,0 +1,111 @@
+{
+  "system": {
+    "name": "AI Employee",
+    "version": "1.0.0",
+    "tier": "Bronze",
+    "description": "Autonomous, local-first, agent-driven system using Claude Code as reasoning engine"
+  },
+  "paths": {
+    "vault": "./vault",
+    "skills": "./skills",
+    "sub_agents": "./sub_agents",
+    "logs": "./vault/Logs",
+    "needs_action": "./vault/Needs_Action",
+    "plans": "./vault/Plans",
+    "done": "./vault/Done",
+    "pending_approval": "./vault/Pending_Approval",
+    "approved": "./vault/Approved",
+    "rejected": "./vault/Rejected"
+  },
+  "security": {
+    "dry_run_default": true,
+    "approval_required": {
+      "financial_transactions": true,
+      "communications": true,
+      "system_changes": true,
+      "sensitive_data": true
+    },
+    "log_all_actions": true,
+    "no_credentials_in_vault": true
+  },
+  "agents": {
+    "communications": {
+      "enabled": true,
+      "watchers": ["gmail", "whatsapp"],
+      "approval_required": true
+    },
+    "finance": {
+      "enabled": true,
+      "watchers": ["bank", "expense"],
+      "auto_pay": false,
+      "approval_required": true
+    },
+    "operations": {
+      "enabled": true,
+      "features": ["project_management", "deadline_tracking", "bottleneck_identification"]
+    },
+    "ceo": {
+      "enabled": true,
+      "features": ["strategic_briefing", "cost_optimization"]
+    }
+  },
+  "skills": {
+    "inbox_processor": {
+      "enabled": true,
+      "priority": "high"
+    },
+    "approval_manager": {
+      "enabled": true,
+      "priority": "high"
+    },
+    "dashboard_updater": {
+      "enabled": true,
+      "priority": "medium"
+    },
+    "audit_logger": {
+      "enabled": true,
+      "priority": "critical"
+    },
+    "weekly_ceo_briefing": {
+      "enabled": true,
+      "priority": "medium",
+      "schedule": "weekly"
+    },
+    "task_completion_checker": {
+      "enabled": true,
+      "priority": "high"
+    }
+  },
+  "watchers": {
+    "gmail": {
+      "enabled": false,
+      "type": "python",
+      "schedule": "every_5_minutes"
+    },
+    "whatsapp": {
+      "enabled": false,
+      "type": "playwright",
+      "schedule": "every_5_minutes"
+    },
+    "file_system": {
+      "enabled": false,
+      "type": "python",
+      "schedule": "continuous"
+    },
+    "finance": {
+      "enabled": false,
+      "type": "python",
+      "schedule": "every_15_minutes"
+    }
+  },
+  "mcp_servers": {
+    "enabled": false,
+    "host": "localhost",
+    "port": 8000
+  },
+  "ralph_wiggum_loop": {
+    "enabled": false,
+    "interval_seconds": 300,
+    "persistence": true
+  }
+}
