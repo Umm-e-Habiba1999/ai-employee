@@ -1,0 +1,13 @@
+{
+  "id": "task_1772722432_email_task_1772722432_Give your photos a whole new vibe",
+  "title": "Process: email_task_1772722432_Give your photos a whole new vibe.txt",
+  "description": "New file received: email_task_1772722432_Give your photos a whole new vibe.txt",
+  "source_file": "incoming\\email_task_1772722432_Give your photos a whole new vibe.txt",
+  "content_preview": "# New Task from Email\n\n## Email Details\n- **From**: ChatGPT <noreply@email.openai.com>\n- **Subject**: Give your photos a whole new vibe\n- **Date**: Tue, 03 Mar 2026 17:44:50 +0000 (UTC)\n\n## Email Content\n<!DOCTYPE html>\n\n<html dir=\"ltr\">\n\n<head>\n\n  <meta charset=\"utf-8\">\n\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\n  <title></title>\n\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n  <!-- Hint clients that we explicitly support light/dark rendering. -->\n\n  <me...",
+  "created_at": "2026-03-05T19:53:52.643624",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "plan_generated": "plan_task_1772722432_email_task_1772722432_Give your photos a whole new vibe",
+  "processed_at": "2026-03-05T21:08:22.672920"
+}

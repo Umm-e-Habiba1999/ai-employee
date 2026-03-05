@@ -1,0 +1,19 @@
+# New Task Request
+
+## Objective
+Create a quarterly report for Q1 2024.
+
+## Details
+- Gather sales data from the database
+- Analyze customer feedback
+- Create visualizations
+- Generate executive summary
+
+## Priority
+High
+
+## Deadline
+2024-04-01
+
+## Approval Required
+Yes - requires executive approval

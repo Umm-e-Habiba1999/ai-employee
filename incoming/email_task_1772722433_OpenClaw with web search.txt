@@ -1,0 +1,59 @@
+# New Task from Email
+
+## Email Details
+- **From**: Ollama <hello@ollama.com>
+- **Subject**: OpenClaw with web search
+- **Date**: Fri, 27 Feb 2026 19:18:01 +0000
+
+## Email Content
+
+
+ 
+OpenClaw is a personal AI assistant that can send emails, manage your calendar, and complete other tasks via messaging apps like
+WhatsApp, Telegram, iMessage.
+ 
+In Ollama version 0.17, Ollama can set up OpenClaw to work with open models and web search out of the box.
+ 
+
+
+Install OpenClaw
+
+Download Ollama 0.17 [https://ollama.com/download], then run:
+ 
+ollama launch openclaw
+ 
+
+
+Search the web for the latest information
+
+
+
+When using Ollama’s cloud models, web search is enabled out-of-the-box for OpenClaw. This allows assistants to use up-to-date
+information to answer your messages.
+ 
+
+
+Don’t wake up to surprise bills
+
+ * Ollama includes free access to cloud-hosted models and local models you can run on your own hardware.
+
+ * Ollama Pro [https://ollama.com/pricing] includes enough usage to run a personal agent daily
+
+ * Ollama Max [https://ollama.com/pricing] is for continued, heavy usage running agents around the clock
+
+ 
+
+Download Ollama [https://ollama.com/download]
+
+ 
+If you have any feedback, reply directly to this email or join Ollama's Discord channel [https://discord.gg/ollama].
+ 
+❤️ Ollama
+ 
+You are receiving this email because you opted-in to receive updates from Ollama
+Ollama, 744 High Street, Palo Alto, CA 94301
+Unsubscribe [https://app.loops.so/unsubscribe/cmm59yjzr5sk2015lgplw50bf/9f98a42cfa3c5945c5738e2d743b10381f12575d36b357d31af5dc64ef5f5f1a89329face984eceefa531f968738be7923cf6a75735f1bb3eed029e9]
+
+
+## Instructions
+Process this email content as a new task in the AI Employee system.

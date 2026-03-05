@@ -1,0 +1,13 @@
+{
+  "id": "task_1772722430_email_task_1772722430_AI Employee Test Email - 2026-03-04 230505",
+  "title": "Process: email_task_1772722430_AI Employee Test Email - 2026-03-04 230505.txt",
+  "description": "New file received: email_task_1772722430_AI Employee Test Email - 2026-03-04 230505.txt",
+  "source_file": "incoming\\email_task_1772722430_AI Employee Test Email - 2026-03-04 230505.txt",
+  "content_preview": "# New Task from Email\n\n## Email Details\n- **From**: newhibaqureshi199@gmail.com\n- **Subject**: AI Employee Test Email - 2026-03-04 23:05:05\n- **Date**: Wed, 04 Mar 2026 10:05:11 -0800 (PST)\n\n## Email Content\n\n\n            This is a test email from the AI Employee system.\n\n\n\n            Sent at: 2026-03-04 23:05:05\n\n            From: newhibaqureshi199@gmail.com\n\n            To: newhibaqureshi199@gmail.com\n\n\n\n            This confirms that email functionality is working correctly.\n\n            \n\n#...",
+  "created_at": "2026-03-05T19:53:50.490025",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "plan_generated": "plan_task_1772722430_email_task_1772722430_AI Employee Test Email - 2026-03-04 230505",
+  "processed_at": "2026-03-05T21:08:22.548922"
+}

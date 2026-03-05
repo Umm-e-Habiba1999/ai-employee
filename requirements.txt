@@ -29,3 +29,6 @@ python-dateutil
 
 # For configuration files
 pyyaml
+
+# For file system watching
+watchdog

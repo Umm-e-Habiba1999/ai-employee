@@ -1,0 +1,13 @@
+{
+  "id": "task_1772301540_test_new",
+  "title": "Process: test_new.txt",
+  "description": "New file received: test_new.txt",
+  "source_file": "incoming\\test_new.txt",
+  "content_preview": "Test task content for file watcher",
+  "created_at": "2026-02-28T22:59:00.170317",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "plan_generated": "plan_task_1772301540_test_new",
+  "processed_at": "2026-03-05T21:08:22.380921"
+}

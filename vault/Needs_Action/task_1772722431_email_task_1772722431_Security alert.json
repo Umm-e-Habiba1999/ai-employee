@@ -1,0 +1,13 @@
+{
+  "id": "task_1772722431_email_task_1772722431_Security alert",
+  "title": "Process: email_task_1772722431_Security alert.txt",
+  "description": "New file received: email_task_1772722431_Security alert.txt",
+  "source_file": "incoming\\email_task_1772722431_Security alert.txt",
+  "content_preview": "# New Task from Email\n\n## Email Details\n- **From**: Google <no-reply@accounts.google.com>\n- **Subject**: Security alert\n- **Date**: Wed, 04 Mar 2026 14:55:04 GMT\n\n## Email Content\n[image: Google]\n\nYour password was changed\n\n\n\n\n\nnewhibaqureshi199@gmail.com\n\nThe password for your Google account newhibaqureshi199@gmail.com was\n\nchanged. If you didn't change it, you should recover your account\n\n<https://accounts.google.com/RecoverAccount?fpOnly=1&source=ancp&Email=newhibaqureshi199@gmail.com&et=0>\n\n...",
+  "created_at": "2026-03-05T19:53:51.716059",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "plan_generated": "plan_task_1772722431_email_task_1772722431_Security alert",
+  "processed_at": "2026-03-05T21:08:22.640919"
+}

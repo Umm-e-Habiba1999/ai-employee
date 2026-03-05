@@ -1,0 +1,13 @@
+{
+  "id": "task_1772645730_test_task",
+  "title": "Process: test_task.txt",
+  "description": "New file received: test_task.txt",
+  "source_file": "incoming\\test_task.txt",
+  "content_preview": "# New Task Request\n\n## Objective\nCreate a quarterly report for Q1 2024.\n\n## Details\n- Gather sales data from the database\n- Analyze customer feedback\n- Create visualizations\n- Generate executive summary\n\n## Priority\nHigh\n\n## Deadline\n2024-04-01\n\n## Approval Required\nYes - requires executive approval",
+  "created_at": "2026-03-04T22:35:30.872172",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "plan_generated": "plan_task_1772645730_test_task",
+  "processed_at": "2026-03-05T21:08:22.508920"
+}

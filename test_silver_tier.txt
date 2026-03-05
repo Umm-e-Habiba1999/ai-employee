@@ -1,0 +1,15 @@
+# Test Task File
+
+## Description
+This is a test file to verify the Silver Tier file watcher functionality.
+
+## Request
+Please process this file through the AI Employee system and create a structured plan.
+
+## Details
+- Task type: Information processing
+- Priority: Medium
+- Expected outcome: A structured plan in the Plans directory
+
+## Additional Information
+This file is for testing the complete Silver Tier workflow.

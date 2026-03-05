@@ -1,0 +1,13 @@
+{
+  "id": "task_1772722458_email_task_1772722430_Multimodal agents with Qwen35",
+  "title": "Process: email_task_1772722430_Multimodal agents with Qwen35.txt",
+  "description": "New file received: email_task_1772722430_Multimodal agents with Qwen35.txt",
+  "source_file": "incoming\\email_task_1772722430_Multimodal agents with Qwen35.txt",
+  "content_preview": "# New Task from Email\n\n## Email Details\n- **From**: Ollama <hello@ollama.com>\n- **Subject**: Multimodal agents with Qwen3.5\n- **Date**: Wed, 4 Mar 2026 20:19:59 +0000\n\n## Email Content\n\n\n\n\n\n\nQwen3.5 from Alibaba is available on Ollama. It's a native vision-language model. Text and image understanding are built into a\n\nsingle model:\n\n * Native multimodal: unlike previous generations, image input is built-in\n\n\n\n * 256K context: all models support 262,144 tokens, enough for most codebases or docume...",
+  "created_at": "2026-03-05T19:54:18.725334",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "plan_generated": "plan_task_1772722458_email_task_1772722430_Multimodal agents with Qwen35",
+  "processed_at": "2026-03-05T21:08:23.094922"
+}

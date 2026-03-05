@@ -18,14 +18,20 @@ sys.path.append("./utils")
 
 # Import OpenRouter client
 from utils.openrouter_client import OpenRouterClient
+# Import Silver Tier components
+from silver_tier_coordinator import SilverTierCoordinator
 
 class AIEmployeeSystem:
-    def __init__(self, vault_path="./vault"):
+    def __init__(self, vault_path="./vault", incoming_path="./incoming"):
         self.vault_path = Path(vault_path)
+        self.incoming_path = Path(incoming_path)
         self.running = False
 
         # Initialize OpenRouter client
         self.ai_client = OpenRouterClient()
+
+        # Initialize Silver Tier Coordinator
+        self.silver_coordinator = SilverTierCoordinator(vault_path, incoming_path)
 
         # Import agents and skills
         from skills.inbox_processor import InboxProcessor
@@ -129,13 +135,17 @@ class AIEmployeeSystem:
         print(f"\n[{datetime.now()}] Starting AI Employee cycle...")
 
         try:
-            # Process any new items in Needs_Action
+            # Run Silver Tier workflow (file watching, planning, approval)
+            print(f"[{datetime.now()}] Running Silver Tier workflow...")
+            self.silver_coordinator.process_workflow_cycle()
+
+            # Process any new items in Needs_Action (Bronze Tier)
             self.process_needs_action()
 
-            # Run specialized agents
+            # Run specialized agents (Bronze Tier)
             self.run_agents()
 
-            # Run maintenance tasks
+            # Run maintenance tasks (Bronze Tier)
             self.maintenance_tasks()
 
             print(f"[{datetime.now()}] AI Employee cycle completed successfully")
@@ -191,10 +201,12 @@ def main():
                        help="Cycle interval in seconds (for continuous mode)")
     parser.add_argument("--vault", default="./vault",
                        help="Path to vault directory")
+    parser.add_argument("--incoming", default="./incoming",
+                       help="Path to incoming directory")
 
     args = parser.parse_args()
 
-    system = AIEmployeeSystem(vault_path=args.vault)
+    system = AIEmployeeSystem(vault_path=args.vault, incoming_path=args.incoming)
 
     if args.mode == "continuous":
         system.run_continuous(cycle_interval=args.interval)
