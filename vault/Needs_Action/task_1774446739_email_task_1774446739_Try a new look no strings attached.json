@@ -1,0 +1,15 @@
+{
+  "id": "task_1774446739_email_task_1774446739_Try a new look no strings attached",
+  "title": "Process: email_task_1774446739_Try a new look no strings attached.txt",
+  "description": "New file received: email_task_1774446739_Try a new look no strings attached.txt",
+  "source_file": "incoming\\email_task_1774446739_Try a new look no strings attached.txt",
+  "content_preview": "# New Task from Email\n\n## Email Details\n- **From**: ChatGPT <noreply@email.openai.com>\n- **Subject**: Try a new look, no strings attached\n- **Date**: Wed, 18 Mar 2026 17:38:45 +0000 (UTC)\n\n## Email Content\n<!DOCTYPE html>\n\n<html dir=\"ltr\">\n\n<head>\n\n  <meta charset=\"utf-8\">\n\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\n  <title></title>\n\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n  <!-- Hint clients that we explicitly support light/dark rendering. -->\n\n  <...",
+  "created_at": "2026-03-25T18:52:19.082511",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "original_file_path": "incoming\\email_task_1774446739_Try a new look no strings attached.txt",
+  "plan_generated": "plan_task_1774446739_email_task_1774446739_Try a new look no strings attached",
+  "processed_at": "2026-03-25T18:52:26.882223",
+  "processing_completed": true
+}

@@ -1,0 +1,977 @@
+# New Task from Email
+
+## Email Details
+- **From**: ChatGPT <noreply@email.openai.com>
+- **Subject**: Try a new look, no strings attached
+- **Date**: Wed, 18 Mar 2026 17:38:45 +0000 (UTC)
+
+## Email Content
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Hint clients that we explicitly support light/dark rendering. -->
+  <meta name="color-scheme" content="light dark only">
+  <meta name="supported-color-schemes" content="light dark only">
+  <style type="text/css">
+  /**
+   * Google webfonts. Recommended to include the .woff version for cross-client compatibility.
+   */
+  @media screen {
+    /* OpenAI Sans font family */
+    @font-face {
+      font-display: swap;
+      font-family: "OpenAI Sans";
+      font-style: normal;
+      font-weight: 400;
+      src: url("https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Regular.woff2") format("woff2");
+    }
+
+    @font-face {
+      font-display: swap;
+      font-family: "OpenAI Sans";
+      font-style: normal;
+      font-weight: 500;
+      src: url("https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Medium.woff2") format("woff2");
+    }
+
+    @font-face {
+      font-display: swap;
+      font-family: "OpenAI Sans";
+      font-style: normal;
+      font-weight: 600;
+      src: url("https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Semibold.woff2") format("woff2");
+    }
+
+    @font-face {
+      font-display: swap;
+      font-family: "OpenAI Sans";
+      font-style: normal;
+      font-weight: 700;
+      src: url("https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Bold.woff2") format("woff2");
+    }
+  }
+
+  :root {
+    color-scheme: light dark only;
+    supported-color-schemes: light dark only;
+  }
+
+  /**
+   * Avoid browser level font resizing.
+   * 1. Windows Mobile
+   * 2. iOS / OSX
+   */
+  body,
+  table,
+  td,
+  a {
+    -ms-text-size-adjust: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    font-family: 'OpenAI Sans', Helvetica, Arial, sans-serif;
+  }
+
+  /**
+   * Remove extra space added to tables and cells in Outlook.
+   */
+  table,
+  td {
+    mso-table-rspace: 0pt;
+    mso-table-lspace: 0pt;
+    vertical-align: top; /* Align content to the top of table cells */
+  }
+
+  /**
+   * Better fluid images in Internet Explorer.
+   */
+  img {
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /**
+   * Remove blue links for iOS devices.
+   */
+  a[x-apple-data-detectors] {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /**
+   * Fix centering issues in Android 4.4.
+   */
+  div[style*="margin: 16px 0;"] {
+    margin: 0 !important;
+  }
+
+  body {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /**
+   * Collapse table borders to avoid space between cells.
+   */
+  table {
+    border-collapse: collapse !important;
+  }
+
+  a {
+    color: #898A8D;
+  }
+
+  .image-reset-bullets,
+  .image-reset-bullets .email-bullet-link {
+      color: #000000;
+  }
+
+  /* Give the ChatGPT logo pill consistent breathing room in light mode. */
+  .email-logo-pill {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 13px;
+      display: inline-block;
+  }
+
+  img {
+    height: auto;
+    line-height: 100%;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+  }
+
+  /* Composer image sizing (mobile default) */
+  .composer-img {
+      width: 83px !important;
+      height: auto !important;
+      padding: 16px !important;
+  }
+
+  h1 {
+      font-size: 34px;
+      line-height: 41px;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      margin: 0;
+  }
+  h2 {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 150%;
+      letter-spacing: -0.2px;
+  }
+  p {
+      font-size: 16px;
+      line-height: 130%;
+      font-weight: 500;
+      margin: 0;
+  }
+  p + p {
+      margin-top: 16px;
+  }
+  /* Intro blocks (H1/H2) sizing */
+  .intro-block {
+      width: 345px !important;
+      max-width: 345px !important;
+  }
+  /* Composer card sizing */
+  .composer-card {
+      width: 377px !important;
+      max-width: 377px !important;
+  }
+  /* Button styling */
+  a.button {
+      background-color: #000000 !important; /* default black */
+      border-radius: 24px !important; /* make button curvy */
+      padding: 11.5px 24px 11.5px !important; /* bigger size */
+      font-size: 16px !important; /* revert text size */
+      line-height: 24px !important;
+  }
+
+  a.button:active {
+      background-color: #414141 !important; /* dark gray on click */
+      border-radius: 36px !important;
+  }
+  /* CTA button hover state (supported clients only) */
+  a.button-invert:hover,
+  a.button-invert:focus {
+      background-color: #000000 !important;
+      color: #FFFFFF !important;
+      border-color: #FFFFFF !important;
+  }
+  a.button-invert:hover span,
+  a.button-invert:focus span {
+      color: #FFFFFF !important;
+  }
+  @media (prefers-color-scheme: dark) {
+      a.button-invert {
+          background-color: #FFFFFF !important;
+          color: #000000 !important;
+          border-color: #FFFFFF !important;
+          -webkit-text-fill-color: #000000 !important;
+      }
+      a.button-invert span {
+          color: #000000 !important;
+          -webkit-text-fill-color: #000000 !important;
+      }
+  }
+  [data-ogsc] a.button-invert,
+  [data-ogsb] a.button-invert {
+      background-color: #FFFFFF !important;
+      color: #000000 !important;
+      border-color: #FFFFFF !important;
+      -webkit-text-fill-color: #000000 !important;
+  }
+  [data-ogsc] a.button-invert span,
+  [data-ogsb] a.button-invert span {
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+  }
+  /* Ensure hover keeps text legible even with dark-mode overrides. */
+  a.button-invert:hover,
+  a.button-invert:focus {
+      color: #FFFFFF !important;
+      -webkit-text-fill-color: #FFFFFF !important;
+  }
+  a.button-invert:hover span,
+  a.button-invert:focus span {
+      color: #FFFFFF !important;
+      -webkit-text-fill-color: #FFFFFF !important;
+  }
+  /* Badges: use real rows so the stacked layout survives across email clients */
+  .badges {
+      width: 100% !important;
+      max-width: 128px !important;
+  }
+  .badges .badge {
+      width: 100% !important;
+      vertical-align: bottom !important;
+  }
+  .badges .badge img {
+      width: 120px !important;
+      max-width: 120px !important;
+      height: auto !important;
+      margin: 0 auto !important;
+  }
+
+  /* Desktop: larger typography */
+  @media screen and (min-width:480px) {
+      h1 {
+          font-size: 34px !important;
+          line-height: 41px !important;
+          letter-spacing: 0.4px;
+          font-weight: 400 !important;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 150%;
+        letter-spacing: -0.2px;
+      }
+      /* Header cell: increase side padding on desktop only */
+      td.header-td {
+          padding-left: 57px !important;
+          padding-right: 57px !important;
+      }
+      /* Composer image sizing for desktop */
+      .composer-img {
+          width: 98px !important;
+      }
+      /* Body content cells: increase side padding on desktop */
+      td.content-td {
+          padding-left: 60px !important;
+          padding-right: 60px !important;
+      }
+      td.footer-td {
+          padding-left: 56px !important;
+          padding-right: 56px !important;
+      }
+      p {
+          font-size: 16px !important;
+          line-height: 130% !important;
+          font-weight: 400;
+      }
+      td {
+          font-size: 10px !important;
+          line-height: 16px !important;
+          font-weight: 400;
+      }
+      a.button {
+          font-size: 16px !important;
+          line-height: 24px !important;
+      }
+      .footer-row td {
+          vertical-align: bottom !important;
+          padding-left: 0 !important;
+      }
+      /* Composer card width on desktop */
+      .composer-card {
+          width: 400px !important;
+          max-width: 400px !important;
+      }
+      /* Intro blocks width on desktop */
+      .intro-block {
+          width: 360px !important;
+          max-width: 360px !important;
+      }
+  }
+  /* Mobile stacking helper for columns */
+  @media screen and (max-width:480px) {
+      /* Ensure footer badges bottom-align with copyright on mobile */
+      td.header-td {
+          padding-left: 21px !important;
+          padding-right: 21px !important;
+      }
+      /* Body content cells: smaller side padding on mobile */
+      td.content-td {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+      }
+      td.footer-td {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+      }
+      .footer-row td {
+          vertical-align: bottom !important;
+          padding-left: 0 !important;
+      }
+  }
+
+  /* Dark mode: render the email on a true-black canvas with high-contrast cards */
+  @media (prefers-color-scheme: dark) {
+      body.generic,
+      .wrapperMod,
+      .heroMod03 {
+          background-color: #000000 !important;
+      }
+      body {
+          background-color: #000000 !important;
+          color: #ffffff !important;
+      }
+      .email-shell {
+          background-color: #000000 !important;
+      }
+      .content-td {
+          background-color: #000000 !important;
+      }
+      h1, h2, p {
+          color: #ffffff !important;
+      }
+      .heroMod03 h1,
+      .heroMod03 h2,
+      .heroMod03 p,
+      .box h1,
+      .box h2,
+      .box p,
+      .box a {
+          color: #FFFFFF !important;
+          -webkit-text-fill-color: #FFFFFF !important;
+      }
+      .prompt-card-table {
+          background: #000000 !important;
+          box-shadow: none !important;
+      }
+      .prompt-card-border {
+          border-color: #FFFFFF !important;
+      }
+      .prompt-card-text,
+      .prompt-card-text h2 {
+          color: #FFFFFF !important;
+      }
+      .email-header-td {
+          background-color: #000000 !important;
+          padding-top: 8px !important;
+          padding-bottom: 8px !important;
+      }
+      .email-header-inner {
+          padding-top: 16px !important;
+          padding-bottom: 16px !important;
+      }
+      .email-footer-surface {
+          background-color: #1f1f1f !important;
+          border-radius: 16px !important;
+          padding: 24px !important;
+      }
+      .email-footer-row {
+          background-color: #000000 !important;
+      }
+      .email-footer-logo-cell {
+          padding-bottom: 12px !important;
+      }
+      .email-logo-pill {
+          background-color: #ffffff !important;
+          border-radius: 12px !important;
+          padding: 4px !important;
+          display: inline-block !important;
+      }
+      .email-header-logo-pill {
+          border-radius: 16px !important;
+          padding: 12px !important;
+      }
+      .email-logo-pill img {
+          background-color: transparent !important;
+      }
+      .email-footer-logo-img {
+          width: 90px !important;
+          height: auto !important;
+      }
+      .email-footer-copy {
+          color: #ffffff !important;
+          padding-left: 0 !important;
+      }
+      .email-footer-copy a {
+          color: #ffffff !important;
+      }
+      .email-footer-copy .email-footer-copyright {
+          color: #a0a0a0 !important;
+      }
+      .image-reset-bullets,
+      .image-reset-bullets .email-bullet-link,
+      .image-reset-bullets .email-bullet-link strong {
+          color: #FFFFFF !important;
+          -webkit-text-fill-color: #FFFFFF !important;
+      }
+  }
+
+  /* Dark mode fallback for clients that use data-ogsc/data-ogsb */
+  [data-ogsc] body,
+  [data-ogsb] body {
+      background-color: #000000 !important;
+      color: #ffffff !important;
+  }
+  [data-ogsc] body.generic,
+  [data-ogsb] body.generic,
+  [data-ogsc] .wrapperMod,
+  [data-ogsb] .wrapperMod,
+  [data-ogsc] .heroMod03,
+  [data-ogsb] .heroMod03 {
+      background-color: #000000 !important;
+  }
+  [data-ogsc] .email-shell,
+  [data-ogsb] .email-shell {
+      background-color: #000000 !important;
+  }
+  [data-ogsc] .content-td,
+  [data-ogsb] .content-td {
+      background-color: #000000 !important;
+  }
+  [data-ogsc] h1,
+  [data-ogsb] h1,
+  [data-ogsc] h2,
+  [data-ogsb] h2,
+  [data-ogsc] p,
+  [data-ogsb] p {
+      color: #FFFFFF !important;
+      -webkit-text-fill-color: #FFFFFF !important;
+  }
+  [data-ogsc] .heroMod03 h1,
+  [data-ogsb] .heroMod03 h1,
+  [data-ogsc] .heroMod03 h2,
+  [data-ogsb] .heroMod03 h2,
+  [data-ogsc] .heroMod03 p,
+  [data-ogsb] .heroMod03 p,
+  [data-ogsc] .box h1,
+  [data-ogsb] .box h1,
+  [data-ogsc] .box h2,
+  [data-ogsb] .box h2,
+  [data-ogsc] .box p,
+  [data-ogsb] .box p,
+  [data-ogsc] .box a,
+  [data-ogsb] .box a {
+      color: #FFFFFF !important;
+      -webkit-text-fill-color: #FFFFFF !important;
+  }
+  [data-ogsc] .prompt-card-table,
+  [data-ogsb] .prompt-card-table {
+      background: #000000 !important;
+      box-shadow: none !important;
+  }
+  [data-ogsc] .prompt-card-border,
+  [data-ogsb] .prompt-card-border {
+      border-color: #FFFFFF !important;
+  }
+  [data-ogsc] .prompt-card-text,
+  [data-ogsb] .prompt-card-text,
+  [data-ogsc] .prompt-card-text h2,
+  [data-ogsb] .prompt-card-text h2 {
+      color: #FFFFFF !important;
+  }
+  [data-ogsc] .email-header-td,
+  [data-ogsb] .email-header-td {
+      background-color: #000000 !important;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+  }
+  [data-ogsc] .email-footer-surface,
+  [data-ogsb] .email-footer-surface {
+      background-color: #1f1f1f !important;
+      border-radius: 16px !important;
+      padding: 24px !important;
+  }
+  [data-ogsc] .email-footer-row,
+  [data-ogsb] .email-footer-row {
+      background-color: #000000 !important;
+  }
+  [data-ogsc] .email-header-inner,
+  [data-ogsb] .email-header-inner {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+  }
+  [data-ogsc] .email-footer-logo-cell,
+  [data-ogsb] .email-footer-logo-cell {
+      padding-bottom: 12px !important;
+  }
+  [data-ogsc] .email-logo-pill,
+  [data-ogsb] .email-logo-pill {
+      background-color: #ffffff !important;
+      border-radius: 12px !important;
+      padding: 4px !important;
+      display: inline-block !important;
+  }
+  [data-ogsc] .email-header-logo-pill,
+  [data-ogsb] .email-header-logo-pill {
+      border-radius: 16px !important;
+      padding: 12px !important;
+  }
+  [data-ogsc] .email-logo-pill img,
+  [data-ogsb] .email-logo-pill img {
+      background-color: transparent !important;
+  }
+  [data-ogsc] .email-footer-logo-img,
+  [data-ogsb] .email-footer-logo-img {
+      width: 90px !important;
+      height: auto !important;
+  }
+  [data-ogsc] .email-footer-copy,
+  [data-ogsb] .email-footer-copy {
+      color: #ffffff !important;
+      padding-left: 0 !important;
+  }
+  [data-ogsc] .email-footer-copy a,
+  [data-ogsb] .email-footer-copy a {
+      color: #ffffff !important;
+  }
+  [data-ogsc] .email-footer-copy .email-footer-copyright,
+  [data-ogsb] .email-footer-copy .email-footer-copyright {
+      color: #a0a0a0 !important;
+  }
+  [data-ogsc] .image-reset-bullets,
+  [data-ogsb] .image-reset-bullets,
+  [data-ogsc] .image-reset-bullets .email-bullet-link,
+  [data-ogsb] .image-reset-bullets .email-bullet-link,
+  [data-ogsc] .image-reset-bullets .email-bullet-link strong,
+  [data-ogsb] .image-reset-bullets .email-bullet-link strong {
+      color: #FFFFFF !important;
+      -webkit-text-fill-color: #FFFFFF !important;
+  }
+
+
+  /* RTL mirroring */
+  [dir="rtl"] body,
+  [dir="rtl"] table,
+  [dir="rtl"] td,
+  [dir="rtl"] a {
+      direction: rtl !important;
+  }
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] p {
+      text-align: right !important;
+  }
+  
+
+  </style>
+
+
+
+</head>
+<body dir="ltr" class="generic" bgcolor="#FFFFFF">
+
+  <div class="preheader" style="display: none; max-width: 0; max-height: 600; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">
+    Reimagine your photos with the latest styles
+  </div>
+
+  <!-- start body -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr" class="wrapperMod">
+    <!-- start body block -->
+    <tr>
+      <td align="center">
+        <!--[if (gte mso 9)|(IE)]>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="360">
+        <tr>
+        <td align="center" valign="top" width="360">
+        <![endif]-->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-shell heroMod03" style="width: 100%; max-width: 600px;">
+                      <!-- header image -->
+            
+            
+            <tr>
+                <td valign="top" class="header-td email-header-td" style="padding: 42px 24px 42px 24px;">
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-header-surface" style="min-width:100%; background-color:transparent;">
+                        <tbody><tr>
+                            <td valign="top" align="center" class="email-header-inner" style="padding-top: 0; padding-bottom: 0;">
+                                <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMna-2FvdU3LpcC4-2FNA3wSLoyKmfwc7sVlrwBiXppNE-2ByUJLsd1rPpU7N07mTrG-2Fm-2FW7dXJkkpGFMwvy2uV4dvGhQn10-2FOeV92PC27TcuQ3xTYgGuXSeiPczHgd-2B3bBc2ZEmH5xRX1I8KOmoSZaTLARyWb1mRfBbFXTLC3WCQd87w2vLC-2Bzvv8N3E0NKJfYiwPBjMuSmlFGwvh6MJ4mY3XaQro-3D8Dah_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNj2iYnAh0QbYfERWpSG4oSIXd0DUy4g3ojMomnrgRZnt-2BOe4M-2Bm5wJ9q7r-2FIteysJokmOAlUyBSUh9IGJXLpSRSvrKRUXKFeUf0WJV1Dndd-2FgH2ResCmPEc8uTnNgJKTr4x1wcyc2DSHtJdnsudJAxPS2Ocl30ZGlsIfH94Db9NmQ-3D-3D" target="_blank" class="email-logo-pill email-header-logo-pill" style="display:inline-block; background-color:#ffffff; background-image:linear-gradient(#ffffff,#ffffff); border-radius:12px; padding:4px;">
+                                  <img alt="" src="https://persistent.oaistatic.com/chatgpt/icons/chatgpt_logo.png" width="103" style="display:block; margin:0 auto; width:103px; height:auto; max-width:100%; border:0; background-color:#ffffff; background-image:linear-gradient(#ffffff,#ffffff); border-radius:10px;">
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+          
+    
+<tr>
+  <td align="center" class="content-td" style="padding: 12px 24px 0px 24px;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width: 345px; width: 100%;">
+      <tr>
+        <td align="center" style="padding:0;">
+          <h1 style="margin:0; text-align:center; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:34px; line-height:41px; font-weight:400; letter-spacing:0.4px;">
+              Not sure where to start? Just pick a style
+          </h1>
+        </td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+    
+<tr>
+  <td align="center" class="content-td" style="padding: 12px 24px 0px 24px;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width: 345px; width: 100%;">
+      <tr>
+        <td align="center" style="padding:0;">
+          <h2 style="margin:0 auto; text-align:center; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:18px; line-height:150%; font-weight:400; letter-spacing:-0.2px;">
+              Create something totally different using one of your photos and our trending styles.
+          </h2>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+    
+      
+
+
+
+
+
+
+<tr>
+  <td align="center" style="">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="center" class="content-td" style="padding: 24px 24px 28px 24px;">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+            <tr>
+              <td align="center">
+                <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://chatgpt.com/images" style="height:44px;v-text-anchor:middle;width:200px;" arcsize="50%" stroke="t" strokecolor="#000000" strokeweight="1px" fillcolor="#000000"><w:anchorlock/><center style="color:#FFFFFF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;letter-spacing:-0.32px;">Start creating</center></v:roundrect><![endif]-->
+                <!--[if !mso]><!-- --><a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMnka020Su-2B4x7LUg4leZhPFyWaMDvw0bhteuyuqcBDZhfEL5iCgjCG-2F2oqS0UmVmuukm8qQj7tfwh-2F71a2K-2FUBHuFZzNr7tF24jTvJyWC2aQtE-2Fl6v04RmL7pxWvs0miO012qfRLX8YuF5mAYSoRTb1s-2BRAgaUxtaNduhCMODuTXVZPykYWbUYy9fM-2F8pJ-2FL7o8zaiwcGfwMHpZrWgWurq8-3Dgpq1_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNid-2Bx3BygG1ZVY2Y9PdMtFR2397wyDQqwA-2B-2FJdpWVpqmuCd2voUZgUbAmacMriIVtNT2O1v3CT81TggxL8Wk35pPFfWGaiaAT7YokyDaiMAJu1b2qJICGdR6ZAQr7FsybeYD7t7CFlwJJxnU8tADdevkSKhn8vThaH3C5ypnsQ8dg-3D-3D" target="_blank" bgcolor="#000000" class="button-invert" style="font-size:16px; line-height:20px; font-family: Helvetica, Arial, sans-serif, 'OpenAI Sans'; font-weight:400; background-color:#000000; text-decoration:none; padding:12px 24px; color:#FFFFFF; border:1px solid #000000; border-radius:24px; display:inline-block; mso-padding-alt:0;"><span style="mso-text-raise:10pt;">Start creating</span></a><!--<![endif]-->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+    
+    <tr>
+        <td align="center" class="content-td heroMod03" style="padding: 16px 24px 0 24px;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="max-width: 552px;">
+            
+              
+  <tr>
+    <td style="padding: 8px 0;">
+      <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMiBSZsyodAo0AOyPArZaeSuvqd3CHyIoo7fgPL9z3xpMl0qUolu9kc-2FlByfblwhHswZfsp1I1RgXQU7LzruIWc4VXDSXRMTPUjbQN1J7y9IwaZ8Xa-2BUZBrWcCFTBDGHp30q8FRSr68mYi2XGPl4I7icFR9MveiuzGppls3VdyRurX-2F9TinwGOXdw3ZMdfh4RWx827g3i3-2Brtz0281E-2FZnD-2B-2BhEZ9Jc02mzykqnkcPT0-2B3erZxLGuLYDLmu165sH5ZmGMMYmE77jMoRl9wdsz5YMxvpMrdRAOHBUBVvp86xHaqhovZP-2BMlgbNCxdYOiDgG3erkFyXmZpFa1NczFJLBOC-2B4vbur4AIWuTseYONlrnwbbAlr9oe3HrqX-2F00qvHxrSkWX17Tg2GDvxDJ1owvxNyhgIt-2BCgN0WmdwyQBOyLmKsMOg03bWUp6Fl1NmfRwPy4bTQA5VQmofMfTUH1yntKOibvMillzWrajJKWuclRO5cvi-2FURKZYc53mc2jcHC79O7NvkgTphimrnaX99C5enV83pDIDKlrv-2BYzIibQhI3qNuv8ZgWJmgVtXl0yh6jToHT-2F8zKmPZcD0z0CLW0BEtut1SgqrF4TSFKbT8EvGtJYttmcnhoekOHVd5pdMWUNqz0XLrXcawqmhHQ4cDexdZddtpMjjNbxN7FD0yn0-2FjCtWwo-2B7-2FkNsKGZI5FsDZPGiKW05GF6O3sZjIVjfh-2B8teXLsJS69PwKmThjj9e1wCs4mjw5OqxT6-2Bp0gc9yRemg8GkDmRabejyi4QJnCh4UB0TrSYkO2BsrhKA8vc7UtBzRNyMCC8fTAntFlEE-2F3VLeFUyRTZXE2eoDKOxlq648MQEvTrIrIjBKuPHBL79cMlbKFIEXOuA5sTu-2F2FJJaT3vfekxn0kfXWxpGZ2Pwazjm7yXhHomJsNy6rfPqh6X8mK1g2cS-2BMwl5F-2BIWZaFdtTTsfIG3L0aAupH4UCgfz4R-2Bqc9K03Bsixq8johd9EHbeJhEFK8LIUi-2BKFnjyFMBK6xwI5FRMHE1NC0OECbo2VhHrCOYbE7G1dZHPSFQTUGwHYN000vrcsJU7juNvGi5d14270aWcYmiHrODbKjwlKLVmxARYzgadgK125sDwwPr302vhEfPSn-2BCJp-2BG0etO1CJukRsXTew-2BwDUaCeaAvKL6KPbT7cNk3APuBOG21YrlO0ZuR42esQZP5Pbbut-2FrSHtOm5Nk-2BGzzWeGlScWKVAmLA96dAiSaNhwevTIiATmzzrCPsKXb1qrT3qksNKMfBrHpXpuQ5bBxb6LqNuB3WoNtqDdtYvhEzuEdinAJ-2F89V6TNGMIm_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNh3KzN9D7G4c7Ea7-2BUPYt9N-2Fqiu-2B7SwHRAEnKin-2B9PQvfkmTYxdKqdELJGs34Hv2vH36lm2MidGpuJ45Mu7VoMg3MA-2FTQjXB9YoLvrCnG-2Bg54zkwP3-2BX-2FwRChuFlibMWIJ6p00F3dn-2FvxaEXAm6-2FHFqWOoAlSZU5GUqbRLiZLnEDQ-3D-3D" target="_blank" style="display:block; text-decoration:none; color:inherit;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="377" align="center" class="composer-card box" style="border-collapse: separate !important; border-spacing: 0;">
+          <tr>
+            <td class="prompt-card-border" style="font-size:1px;line-height:1px;vertical-align:middle;border-radius:20px; padding:2px; border:2px solid #E5E7EB;" valign="middle" align="center">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr" class="prompt-card-table" style="border-collapse: separate !important; border-spacing: 0; border-radius:18px;">
+                <tr>
+                  <td class="prompt-card-inner" style="padding:10px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr">
+                      <tr>
+                        
+                          <td valign="middle">
+                            <img class="composer-img" src="https://persistent.oaistatic.com/images-app/email/recurring/sketch_email.png" width="56" height="56" alt="" style="display:block; border:0; border-radius:12px; width:56px; height:56px;">
+                          </td>
+                          <td valign="middle" width="12" style="width:12px; min-width:12px; font-size:1px;line-height:1px;">&nbsp;</td>
+                          <td valign="middle" dir="ltr" class="prompt-card-text" style="width:100%; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; color:#000000; vertical-align:middle; text-align:left; padding:0;">
+                            <h2 style="margin:0; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; font-weight:400; letter-spacing:-0.2px;">
+                              Turn my photo into a sketch
+                            </h2>
+                          </td>
+                          <td valign="bottom" align="right" width="48" style="vertical-align: bottom; padding: 16px;">
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/53e215ea-a410-4b4f-b55d-10e00d42bd2e/139x139.png" width="32" alt="" style="display:block; border:0; width:32px; height:32px;">
+                          </td>
+                        
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </a>
+    </td>
+  </tr>
+            
+              
+  <tr>
+    <td style="padding: 8px 0;">
+      <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMiBSZsyodAo0AOyPArZaeSv4KPLtuEwEbxsvweKVYjWrgQ7RlvdNe2Oj36Z9oj2qFhMGxbyDiP63E-2F0mg8yacFWYioCSNUPvtKa-2F7qJE10hZxrc3pIqk3Rjq4byz0TWyLOid2Tjcw0ikObklfLQ5nAj5VTJPGMooVWE3yJlLnqzBuImLjLRxtBHOh6ZWD7m2FoCJbHE6zeaGHkxG98faehBhT32ktnD9G3u9Mnf2zMga64S0PO2XCa7A8LaNWdbYiOUaiQribTmzHm-2BgiVzPqm4sqQqMWtaa2STkCMAtTHkJdR1zaUWI0MLyaMltjHMuLly0tDNKxXzItJ3xAvHxb3SOR-2BBcjqetowPfr0MYzkO8jW8wtuBEAq-2BeZAd00mgd5v0-2F8eQiu0OfUbi6ygIA0jh-2BzT2hojxTg1Brxb2ITo-2Bj0-2BthUqp8QcNhlWfyv1SQbYsXElVItHHQVAa7JK0yBgnaskCcb3Y3twf2Kv9BZQMiHn6nQWJhdZNbeP7NN08mwbqTvL1hIpU3ZzVdGpcfwXaDu9rg9SkKMrez1rw2mogmguWcNRZmdEGuWugC5w9G7sUKBpqnmIdnUQGaAiRMIbzh6CHvyWqHH4-2BVbW0ayYXDHqsv5dYSe7bx94-2FFA0upXIuKkoOQX5XURWUKu6Y5GR3YaIHshiNQ-2FG5h0KzyV7dUesD19xpMgbx5fBbQ2VWoVQBXreurk-2FuN3mcARLJ-2FouKOaZuLg5N7cfhM-2F-2B6sg3Cr73GB3LfPPcR5r7n6TYnY1DZbDoFm6pgsa5JUjPzXRBz6V-2F-2FGcZlKOB66bnr96flt2gFOlAsttwBxye-2BxJpzBu-2Bmi76omNp-2F1HGD1ipfr-2FyrcKteI-2Fj6cZwpBQgkdnwNl-2B1djzXCrvgiq5gPROUPN6wv-2FSH0r3VkSZkuDgz0Q917sFqfuCFWYQLqTk-2BxgAKDF94SPtcgdxiYkR33xP9h5wCaaH34IIstvgNOnv-2FBfmpHMbh9fofvJXIRn39O6SSdwzvkFK5dmn9cBOcPfJQy5RPSynRkps0T-2FfKqGU6GJAc2Gzi7hUbtTASbkBmdMRDlP1-2FdKSUmZW92Z-2BWM0jO4s-2BOExkohr1wFSCSGb6zHHoh4-3DFOeN_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNhtuTyFIbaRQS7E1u9F9pUzkBg389WNAQnUlwCfVscW4W59-2BJa-2BaOSx47IioykHyLBoydIGbi3PtOdSDxICs3oqlneocIu-2BbDe21v6GDBzh6YyZ-2Fv1T2ybILkvJF9RlvZtYaCsiMinKmTGQWJQca-2FdbfVpW3YvGwO1JvNzsjpw1Gw-3D-3D" target="_blank" style="display:block; text-decoration:none; color:inherit;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="377" align="center" class="composer-card box" style="border-collapse: separate !important; border-spacing: 0;">
+          <tr>
+            <td class="prompt-card-border" style="font-size:1px;line-height:1px;vertical-align:middle;border-radius:20px; padding:2px; border:2px solid #E5E7EB;" valign="middle" align="center">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr" class="prompt-card-table" style="border-collapse: separate !important; border-spacing: 0; border-radius:18px;">
+                <tr>
+                  <td class="prompt-card-inner" style="padding:10px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr">
+                      <tr>
+                        
+                          <td valign="middle">
+                            <img class="composer-img" src="https://persistent.oaistatic.com/images-app/email/recurring/create-a-dreamy-pastel-portrait-of-me.png" width="56" height="56" alt="" style="display:block; border:0; border-radius:12px; width:56px; height:56px;">
+                          </td>
+                          <td valign="middle" width="12" style="width:12px; min-width:12px; font-size:1px;line-height:1px;">&nbsp;</td>
+                          <td valign="middle" dir="ltr" class="prompt-card-text" style="width:100%; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; color:#000000; vertical-align:middle; text-align:left; padding:0;">
+                            <h2 style="margin:0; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; font-weight:400; letter-spacing:-0.2px;">
+                              Create a dreamy pastel portrait of me
+                            </h2>
+                          </td>
+                          <td valign="bottom" align="right" width="48" style="vertical-align: bottom; padding: 16px;">
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/53e215ea-a410-4b4f-b55d-10e00d42bd2e/139x139.png" width="32" alt="" style="display:block; border:0; width:32px; height:32px;">
+                          </td>
+                        
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </a>
+    </td>
+  </tr>
+            
+              
+  <tr>
+    <td style="padding: 8px 0;">
+      <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMiBSZsyodAo0AOyPArZaeSsrDj2qDyLy4nCbTPM2iwTxwpDvCjt0kOTbAuD1NRsxkKBbHffMT-2FFTXjn-2Ff-2B8IdZR8D0SoUFhGJaFGoJLRQ1nhO2WYAX2cdPBjZ6ez4P5tpAN322x1ZOE9LV9CCv8dATxFHYK8O7Yhevcd4KU-2FPWlDFUjff2MiWj7aOCEvrmLfyeT5y8oREZREDyaC2aAvLqQRkupGw6O2iUZzd6ZYNF-2BftcsQVEhZc8RHichHdJLUk9YRp5ltlKd786vyOjzNkaiNJglEcZRI75h9EoHDqPPqdxMqwqMW-2FrcAdfQAQoE4UbMFAyNhu5fWzLDoDD9HmBB-2BINIh1B6htj0onhHldTPnhIw-2F0o8tWZrQxyupgaQc-2Bndo6Fp2GXg284gjIuzvBLWm-2FMmtQeEdVitpptVkqT-2FvUOEgVlqngkcgyHp9hZVRmUogxZHexFBqw81fQtHa52G1X0aHXJIF45hZLDidGyjNQBhqD3kRK3csxVLv4HfJhcUgxDft9XfvCBsffuZrr3H0AsEDXTJX2h1UwoUJVrFUoLuktCg37HegpJPzXAysaQ-2F2XSsMoK8DAHpTpYQuxyjPMkJ-2Fovje7eFmDAhqW4athXcBtis8j9uN48BR4nSiGdbuC08wmp4Tfi8amjfas5eI9x0J6NYgf2TFxtPkOpQeSs9tpRddT-2BL41BRc86Vu4cJ43RjOOwoV7ReW1S7kS26VlxFVWd0X1T-2FsCnnNHbXuorjySrZIrlrZKKx-2FnsmtS7TEpb7IdkZQumf010gaLjl-2B1CMu9ww8dkOmR0I0os1GN-2F3RFX3ABV-2Bcsa-2Ba2-2BHiLW35WXQ9HUWJWcyn0EekECt569fEvSD4pZqdXltYv3u4w3yrIjuPm10zOI1rH3bHzTOUBzu288eIn-2B9PpzwEDKLAC0vBX3HpfPkJeFDOcsFC54xIr62B5uhIWjIp-2FQSE4zUBNfC6nuZJLtCSKM-2FcoAW1a2R3IBGSWznuC9gbu5qU-2FAimx8dSaAq-2BLiE2-2FV8j1MqDF9toLQ1Rc7v2vRXCgHjhRpp9kkdkQ0zmJeb6CHbmgdrDnxfeuwQmbEs1Cya2ea6xLRA-2FQvX-2BSW5qQ1qJcJl4WcssH0DdCVBBi3fDXmo4SZWwm9QhyWDvJ9TkOGTK7gqGRJb7n46LkIo7BvkZG6bi-2BGGbGcjdg0ZMv7BQowquxN0KjoSbhYUGJrXZoSwcZFcojP7WpInuD91CMm7nzf9hy9rYKjVvzOJobChOFnFMvkExQpYXg1bIbIzzqQ0zGHRk3bcKmxH0-2FaXsmaj4xNXnD8A2hkT5lRxW4Key79QPBGA4tc8DVypQs2d2YtE7kNhXydGwyI1pg5U-2Blx-2FA4k0l5mxM5N0aaJsZjNGDxpWzKqRm1gjr7NZGQhYYWSC8-2Bt6-2FQFUzfbEo5u53N54QH-2Fv5l65DYaHqZScCtco9bFT3LrreF7SZYmkdGM7fFYwULn5gAcKiK6O0hspZTBTrNDJXmwPhByunFi7HRxN5YB-2BVg0kK5btDqgm7sdWhQdnKaLqhbBD7SOjUGAYun9LtqRaKlWSnkVFeHEbxRoEkpgamSSJMdNEctxplbyDW-2Bvob-2Bu0PnJw99kbfLFyXtc-2Fab7kXJr-2BYaa-2BqIh8pspGVHepHRJATWjj6JZMJh4afYVzr5dF6kqEN93tZ4h70-2FDqq0hJoFX0s3Yyli1DXiM31-2FAeG74vttDd3KGcDvYy5iL6N9wWxXD1yB-2FEOk86bsH8J0y50pLSaFUQaga2K3d2vXnOSHdCt4EsG03Yz-2BOHCV2J8f7jpfjELjOli6HEOzTluFUyl94-2FX1FF7YpFUggFasoTEh4uC_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNgn4gKppH5rrvwhgh0tD-2FADs8A1yUxxkrswpqrK9XCg1Z6OvzEKGCN6NNBkID8w8wQqqtXZ3bFdIGOrjrGrXjxf2u1mye-2Fbc5C-2F8mZDAC-2FjzagGY-2FdJI1Eou4C04lCYiiM-2FIgEOUvFYOJkBKZE-2FfKHbnkWWbMLSiCKFHCVq5X6nQA-3D-3D" target="_blank" style="display:block; text-decoration:none; color:inherit;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="377" align="center" class="composer-card box" style="border-collapse: separate !important; border-spacing: 0;">
+          <tr>
+            <td class="prompt-card-border" style="font-size:1px;line-height:1px;vertical-align:middle;border-radius:20px; padding:2px; border:2px solid #E5E7EB;" valign="middle" align="center">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr" class="prompt-card-table" style="border-collapse: separate !important; border-spacing: 0; border-radius:18px;">
+                <tr>
+                  <td class="prompt-card-inner" style="padding:10px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr">
+                      <tr>
+                        
+                          <td valign="middle">
+                            <img class="composer-img" src="https://persistent.oaistatic.com/images-app/email/recurring/show-me-what-i-look-like-as-a-k-pop-icon.png" width="56" height="56" alt="" style="display:block; border:0; border-radius:12px; width:56px; height:56px;">
+                          </td>
+                          <td valign="middle" width="12" style="width:12px; min-width:12px; font-size:1px;line-height:1px;">&nbsp;</td>
+                          <td valign="middle" dir="ltr" class="prompt-card-text" style="width:100%; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; color:#000000; vertical-align:middle; text-align:left; padding:0;">
+                            <h2 style="margin:0; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; font-weight:400; letter-spacing:-0.2px;">
+                              Show me what I look like as a K-pop icon
+                            </h2>
+                          </td>
+                          <td valign="bottom" align="right" width="48" style="vertical-align: bottom; padding: 16px;">
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/53e215ea-a410-4b4f-b55d-10e00d42bd2e/139x139.png" width="32" alt="" style="display:block; border:0; width:32px; height:32px;">
+                          </td>
+                        
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </a>
+    </td>
+  </tr>
+            
+              
+  <tr>
+    <td style="padding: 8px 0;">
+      <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMiBSZsyodAo0AOyPArZaeSu7QkihTndbPwWxPM7Oa6XSDtyELH1l-2F0J1-2BhF6JQjHbagHTskEtBo3l8WMBnn1E2xrJBaUqdopZ3RPQXJU4rTtvp84Z7rXVzmZVcHjCaU8KiY-2FYLixe3H-2BroXSSqExxck9crfVp78YpnIfh-2FzTwsLJ22HX5rY9bSuQziL2SuNNXP36nPeae6MIcwxJ8-2BMpTC5dIb-2FccuOpfmVIfdsPqtxYzEDnre-2FelVEoNMXsPoWDIZde5i3uvNxmh4bU1LB5UyhBvpsLPEo6Xda-2F2DEVvjq3V-2BxP-2FkjlHjXDVxgWA6BKKNC-2Bc-2FuL05BTX0NxoayWTNMR8xM4bXAeLUPxppgiJyfgxmIJYFGeMtoE5v4Zho8DYgsU5qqzN-2F-2BbxE73BcFC11lK9muEuZaoF91LqyB7Kg4wB45TEQe1dmHKd6FXF9Ldmu4yYrmR7xaDNVd-2BGG-2BKrURv-2FuxR41FhdpcQGzGwwQReZS5sQOT3Uu2pCdozbHP5uuPTeLwfMKZVOWwOOj0r-2BrR5uGp-2FILJx1RutVIpQeRr6ZVMlZg5cOCjMCeCIRwcwWT4obMiROmC4LSSFPmJrsJIpc4P7S9SfkPdtyi6naqU5OuJ6Y5NhQYrp4uqDA5KIW0byakCsZk0hrLx8tpp0B-2BgTR8LIzvIBnCpFhmsXx4Iuj6V08EfC2fcHIf8hMZroASRoKMSuFM1m3jTkV402ASNz5vvUL2HMrLOY2s3OUPIzSBh6Xah8J6lsomjscOeicsZ7VKA2DTigYAk3b4iC5JPvjaViOzBpx1AzJuK7VZjOJf-2B-2B0oKXonpsFAYSUdp3FV-2BP7UgqvLnkfSq3Kp0P1UXUHIN5SEBaZoXnKda42aFhSKoampycGUFvQX51FcVgYgEVKDzf2uBeHptGjj8s2dnjZqRn2bfra-2B6bkkZdal-2F5Sg6UQRhjoHR11JlhXXTWzEzh7mWFpkzGkQ0T-2FKzdm-2BntSDyC4xU7IBpphXeoIEghLTys1ZDlPf3zFniupoxsF-2FE5j22MiFlDmgOMs6lz4D4hKP2kPLriLRjbe5OrWWMbFTum_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNiYKDHIjz9ZYc2q45f80jBRCyd0ibahX5-2BQEMbNmK6W3M0va-2BoUF6tN7Oozqi6absVQ0VeSNJeFwF7HEs62fuw8-2BbP2D-2Fvbda6ldl2-2F4i8gUlR7ZfcDTgAQ-2BPRyaNfNeaF5uJVTgRj1fsPGppp29i-2Ba2CUbwRqWZSfOC6UGbuTPIg-3D-3D" target="_blank" style="display:block; text-decoration:none; color:inherit;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="377" align="center" class="composer-card box" style="border-collapse: separate !important; border-spacing: 0;">
+          <tr>
+            <td class="prompt-card-border" style="font-size:1px;line-height:1px;vertical-align:middle;border-radius:20px; padding:2px; border:2px solid #E5E7EB;" valign="middle" align="center">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr" class="prompt-card-table" style="border-collapse: separate !important; border-spacing: 0; border-radius:18px;">
+                <tr>
+                  <td class="prompt-card-inner" style="padding:10px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" dir="ltr">
+                      <tr>
+                        
+                          <td valign="middle">
+                            <img class="composer-img" src="https://persistent.oaistatic.com/images-app/email/recurring/drop-me-into-a-yearbook-photo.png" width="56" height="56" alt="" style="display:block; border:0; border-radius:12px; width:56px; height:56px;">
+                          </td>
+                          <td valign="middle" width="12" style="width:12px; min-width:12px; font-size:1px;line-height:1px;">&nbsp;</td>
+                          <td valign="middle" dir="ltr" class="prompt-card-text" style="width:100%; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; color:#000000; vertical-align:middle; text-align:left; padding:0;">
+                            <h2 style="margin:0; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:16px; line-height:150%; font-weight:400; letter-spacing:-0.2px;">
+                              Drop me into a yearbook photo
+                            </h2>
+                          </td>
+                          <td valign="bottom" align="right" width="48" style="vertical-align: bottom; padding: 16px;">
+                            <img src="http://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/53e215ea-a410-4b4f-b55d-10e00d42bd2e/139x139.png" width="32" alt="" style="display:block; border:0; width:32px; height:32px;">
+                          </td>
+                        
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </a>
+    </td>
+  </tr>
+            
+          </table>
+        </td>
+    </tr>
+    
+      
+<tr>
+  <td align="center" class="content-td" style="padding: 12px 24px 0px 24px;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width: 345px; width: 100%;">
+      <tr>
+        <td align="center" style="padding:0;">
+          <h1 style="margin:0; text-align:center; color:#000000; font-family:'OpenAI Sans', Helvetica, Arial, sans-serif; font-size:34px; line-height:41px; font-weight:400; letter-spacing:0.4px;">
+              Our most advanced image model
+          </h1>
+        </td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+    
+    
+      
+
+
+
+
+
+
+<tr>
+  <td align="center" style="">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="center" class="content-td" style="padding: 24px 24px 28px 24px;">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+            <tr>
+              <td align="center">
+                <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://chatgpt.com/?mode=default" style="height:44px;v-text-anchor:middle;width:200px;" arcsize="50%" stroke="t" strokecolor="#000000" strokeweight="1px" fillcolor="#000000"><w:anchorlock/><center style="color:#FFFFFF;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;letter-spacing:-0.32px;">Try ChatGPT Images</center></v:roundrect><![endif]-->
+                <!--[if !mso]><!-- --><a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMlXspfX3cfxmQi0ZLE-2BMg-2B8c6ve6K7qNGwaVyYTqTldSjHtvyL0anhJ25j4Ame4ALyc4rnLRS6bKHeEl-2Bp9fNBtUBbPTZcO7jMsb-2BcfPKzqTD4n3B4zUDyUBOWylgm44ni2h-2BsHnmOOVF7NrYfqqdAJanCSufQ0YE7zA5ZJ14g5dABEXQ-2F50Z9Mbuhwxc3KGFCvjsSk-2FbcFYuKwLZD4V0b0-3DiLkV_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNguIP05v6riplDSWQcGLc2GhnNU5vxNwgK9I4yIz-2FYyfTVW2yN2kWmVBrecP9bnTqTM93gC2ibyUidqyM6LTjxsMoukcX1n2HcpJarcIVb9ij8a3Kqdc7XtU41xgOr2B7x1vuaXNW9gOwUo3QLGNaGSAwLM3DbZM29F-2FWIM5-2BnZtg-3D-3D" target="_blank" bgcolor="#000000" class="button-invert" style="font-size:16px; line-height:20px; font-family: Helvetica, Arial, sans-serif, 'OpenAI Sans'; font-weight:400; background-color:#000000; text-decoration:none; padding:12px 24px; color:#FFFFFF; border:1px solid #000000; border-radius:24px; display:inline-block; mso-padding-alt:0;"><span style="mso-text-raise:10pt;">Try ChatGPT Images</span></a><!--<![endif]-->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+    
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+    <!-- end body block -->
+
+        <!-- start footer -->
+    
+    
+    <tr>
+      <td align="center" class="email-footer-row" style="padding:12px 0;">
+        <!--[if mso]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td>
+        <![endif]-->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+          <tr>
+            <td align="center" class="footer-td email-footer-surface" style="background-color:#ededed; border-radius:12px; padding:24px;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="left" class="email-footer-logo-cell" style="padding-bottom:12px;">
+                    <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMna-2FvdU3LpcC4-2FNA3wSLoyKmfwc7sVlrwBiXppNE-2ByUJLsd1rPpU7N07mTrG-2Fm-2FW7dXJkkpGFMwvy2uV4dvGhQn10-2FOeV92PC27TcuQ3xTYgGuXSeiPczHgd-2B3bBc2ZEmH5xRX1I8KOmoSZaTLARyWb1mRfBbFXTLC3WCQd87w2vLC-2Bzvv8N3E0NKJfYiwPBjMuSmlFGwvh6MJ4mY3XaQro-3DS9cm_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNjNE0yUhNMXna-2BastJ5QqxNqgmcajW-2BQgB0-2BYrfaTV90-2FsdyYtMrpGJJJjBleanmpWDGmYOCmdYr8UOCEv0v1LSO3798msZLUXRgW2f-2FSwLXyfV2Wc7cQXjk2ImfpAubHLJZSVAUtPDMxoOpdXlT4yZPlowVPLLaES-2BCgIZ16YnEA-3D-3D" target="_blank" style="display:inline-block;">
+                      <img src="https://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/23791e46-5717-4e4f-a33c-0cc5ba7cf5aa/176x45.png" width="88" height="23" alt="ChatGPT Logo" class="email-footer-logo-img" style="display:block;border:0;">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr class="footer-row">
+                        <td valign="bottom" align="left" class="email-footer-copy" style="font-size:10px; line-height:1.8; color:#000; width:60%; padding-right:12px; vertical-align: bottom; padding-left: 0;">
+                          OpenAI<br/>
+                          1455 3rd Street<br/>San Francisco, CA 94158<br/>
+                          
+                            <a href="http://url3243.email.openai.com/asm/unsubscribe/?user_id=20216706&amp;data=BvXL4GsDhy-qXrNogwLvi5Mgau1PVPUABLrPQ5pWwKloMDAwdTAwMGujiJaVULDT6-dywAQP-4a8chNwA_idm9IktqiS_Qq6NLBcGCvKE0NQ9jsc-pGesmvmn4PVgBqEH75SdeOjpHd6PE82rIZlDqVnNN_9pCLOmWssqORbcpoUrCwSzsfXE8Lit-RAUuXULRvYdVngjhOOzukPl301zylMpFJvO73gakQMeZ3ljF0NGSu-GYttHsLmJUQqYKqQMi8uVWc7SJMYSVe2LFRg5iotc4ftqFKhmr0RKuoU4LwVoyK8YzECxN2l6h7mWYn67_vlLc_z-MBwAxIsfbII_nQPAoLZiiFPp-tOHxLzEKDBZ6Sq49UqGlOTjfqz2-d0F1f84QIfMK9-QTca95U2cg-_xtQJqE-ljCBEEuDqt3LOTffsC5XOORRFK1ZqK8WCNX35fjUVzLaW1gE98aOSv82B0wp6RswIiEWum9ojCzUT4YJP5Nv0fDBtQaGkn8_BvtuJ6aIonmybFlBCLZ6SkytPHgsYsvz3zdug7Aut6-d2ZafX7HQhv_CYOv0uRjonsQgPY05EFMt5VsFnIJgasZeyaNJJlCT7hd8gmPzmtcwa93aUv2REu3n_K7B66gAt6NTLfzfR_7z4H1VJoX7gNDaYB0a9ULm64pwrwfTXmYBmguW8FbasU-YFmOaTUzhgrMhI9_6ylZS2D687fihLH5lIC8KosHg775DhF80mG_vk6sjcWr424xnJLkxHhwobhhFtn0n1M-RiQh-DXSEQ0a5tmY66fa-uCkUiTQN3zBkd_f_lqrJMYmrtkJNp1mhhWUCnPxiDQIXUzSLhhgw_7XrvrqyN_dgRBIHxcruil9sb4_ZYgdKapA==" target="_blank" style="color:#898A8D; text-decoration:underline;">Unsubscribe</a><br/>
+                          
+                          <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMlO-2BNuxxFiPq4chNMg084bhEGj50e3olcSQHUJMMkPiozRBz01nwCKx4sxlHNaM7y1itVxw20203L78JoXrBnp2dFvcxinS29CpBPKRDakvPOxF-2Fv80LxgUeyGTlAderwTyG9bj-2F4fEg3h-2FyihxyJQ9bwcV7cGId8g9h-2BZ-2BA1xqo5KSwQdF1j2-2FfhKe2kkpV5cDxdgi1Zik7X1oi8KQmzsT1VDHJR2PZDdd-2FTDmbU747_AEq_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNi0VfxZXP6zMzKWt8IG53G1TNwxIA4tpA-2B1JJBkJd-2BuZdLMbFukiQNXyb0p1vMqYwv7kpNqJVinTy37yXSd5-2BRLhfPhxeK60IlQ-2BkFIWRq-2Bb4w9rGdG06bwcV6-2BxcilVhqmv70ElZYWSPrS-2Bf7v1jd5NvTxwaBWllTwnZNusvo0eg-3D-3D" target="_blank" style="color:#898A8D; text-decoration:underline;">Privacy</a> &middot; <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMsvdFvmwMTgWtkeYwJPvVy67U0P-2FC-2BUXHl56ySmueHD0C-2FehblJqUOOzRMOQ2Osatjf28rI6UajaZzlLE8PvUW9JI5eX1NWG7iHZu4RPMXQQXMFBK5yq5w1t9B7jPjxmhf-2BhCv0HmaRvBQ-2FIkaORkhY77dOIWyjdWEW5qhyvIbczTHULMsBFj5gEXTAwbZfiqCuHFAMJzr-2BvXbXsQ-2BDUmgE-3D6Loz_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNgSVetAny0iqJDqWtlVMzmeYJ6nR4Jl-2FWBReWpzweKAp9vJ-2BIo-2Fkl2EwxnhDF8Bg4JymGILWFUiJr-2BS9KgTbI76Qr9pPHaJYIrM0etqa5-2FsjPjHnciAjJUEar6EypUZ3TVHVQcx7TcVCrgbw-2BYmLoehbkYQvPkcCYaqwoATrUKghg-3D-3D" target="_blank" style="color:#898A8D; text-decoration:underline;">Terms</a><br/>
+                          <span class="email-footer-copyright" style="color:#888; display:block; margin-top: 1.8em;">OpenAI © 2015–2026</span>
+                        </td>
+                        
+                          <td valign="bottom" width="40%" style="width:40%; text-align:center; vertical-align: bottom;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="badges" style="width:100%; max-width:128px;">
+                              <tr>
+                                <td class="badge" style="text-align:center; padding:0 4px 8px 4px;">
+                                  <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMtD-2BVMO9vVCyWEdp43dehRwKnLcSDIdcT8iXDeqHYaFTCnaK2ChDusu4AphrKyq-2Baqa7Tmc6YxYxg4SQlTvXMvamvRJ1NdTvDQb2KVvN7e-2B7zpFzOadNA3d2X0rr7z7F8lSl-2FVJxigrsGzhqZ7B0JjRiHFTNqlC9TymIrRcjSFDKV-2FL0Nnt5zw5nF2-2BzNedR83rYNFRbViJalptxTCHJigROlLD9z1A5vvDVUjPJe4I6SJAGPR-2B-2Fj2HDjwt6LrqZ288AWKAEi-2BCovFAjhb8pu9lyxqWuF71GWp1nCHwf-2Bhdtso4MKs3CBqnvii3y-2Bb1jqS7iJUEFjS0x6zU2TflBnlfLoEr0-2BCYrUQJpxc7hNJJrA1K4_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNg86SqBYmIjuSIUL4IWFHoJUSpiIUNie9SwuRI8za-2Bvzrua-2B5xcLvAxa1k77SyPIFg4QFRe7WaMewrVWciZ0Rn8bKtiFG1Agl9-2B8R7NqQ7wsobRixdx0VXMzCnhX4VP8Hr1TwIrNJndy89k2SFwceHupyWhtFXAy-2BnEWW-2F6HJKaAg-3D-3D" target="_blank" style="display:inline-block;">
+                                    <img src="http://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/f0bb62f0-5199-4600-a341-38aa871bde57/240x80.png" width="120" alt="Get it on Google Play" style="display:block; border:0; width:120px; height:auto;">
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="badge" style="text-align:center; padding:0 4px;">
+                                  <a href="http://url3243.email.openai.com/ls/click?upn=u001.IQLfsj4kk-2BK7JhymNusRMuAhSqai8qJ-2B1O2-2B81u67QpwNUgJ-2Bd0SCWbzBz1KsXgnWp6TJZGGyYVXyadoVtWOVnM0-2FtgZm49K4LRTWyIrSwSNPqlhn-2Bn3XEg50IczhVxuqIqdMaWMBvXHXlVnUsWWFMMeZVmtrOvsVC8Bw5h73nDLAHoFRUBo7x4XRYLtfBhIncjHNVOhims6ZMOnlZ0eynmMAyTRCQrFg3PkO20VsGR3f-2FJlVVxw3-2BboreORA7ysc7H6_Teqp6Mgd2ckJRkwm0UTu3vpEdeiZalPieaGe2wl9qEddIf9Sl3H-2F0qXP2TfX9xgyIiqgHO8NSWQuLn51AkIjlvggKaoLUnVxm2CEik1P95r6-2Bfz-2FST72aokgE11UdyciRBB-2BI6weYP77UMKZc-2FKHuc4tLfe7yUymUZ3XPNIj54a1lzFtXYT4cf9Nq4E3OtUT26ph5n-2BbMe4rCVwKOFxOFey6UtSHdhhezPARNi0KbHZOSytlyIuD-2FQZsH9UGt26VJHSQgFTWDfoeHxjmcemzC2Ho9VrKdRtznLaP2fXBO2DhE8xTBfdkqfnUNNg1QUH-2BCvo-2BCc-2FJFB4FND-2BVxxPzEaNjSbNx9TW8U7oliEejBemevklDWgBoZTIBxRUm84Lm1WGcZsUXcfciT3riLxdsrh0xW4I-2FSEqwa5QZgGnb8yJEJHvbmzoLtioxpNS-2BC-2FrL-2FX7EWMcHZkyuNUIdDZ1DsA1vsisl7-2Fs-2Ftr81aVRgcNjB0Nic1v5GlCfSLXMrIPl2tAIMwhn94kaFEPiJ0DaehR5pGm2sMp-2B9TVTIiJTc-2Bq0AVeb4N5xR3sN-2FTcmXOBby-2BHgt3E41nUCVzOgNDR8xe4tb89FPJk-2FAYKMECT2g-2FRbHE1AbPR3W-2FSoErdFzi1KSk4kyA6rPdTBK963UfPTFOg-3D-3D" target="_blank" style="display:inline-block;">
+                                    <img src="http://cdn.mcauto-images-production.sendgrid.net/d4ef4a73d51fe844/7556e4e9-fd26-44ce-b5db-098b33274c20/240x80.png" width="120" alt="Download on the App Store" style="display:block; border:0; width:120px; height:auto;">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+    <!-- end footer -->
+
+  </table>
+  <!-- end body -->
+
+<img src="http://url3243.email.openai.com/wf/open?upn=u001.c4F-2B2-2FEQ6eph93-2Fh-2BZ56xIP6upkY6pgvVD7fECpvO83CI6cJfItur8kfhIW-2BGEZ9c0UWRQzGNXDsDUytNeMqdBOb5gDG1pd-2FNuQfvZnRFP4Fnr4ru-2BtkMwsw0hPXJfO72yIZAL7rnSSco-2FbX2tCrFVwxZJLLq7Zd1Tv-2BrWc9hk5nfs4M-2BCemzpBf4-2FtQ8ELGZDsTxwXaOYxNM9JDdWvmYxvXgmttn6704pYSFfzacdebnkl72YsF-2B1R8Ayff390ebkVGILlIVRS01VszqxhwfFe9BrXJVPjAyjX2dg9dqrEHRhwpU4yndY0ShCw5k6gGga8-2B-2Br9-2Byo93jTAURODIpTHtnyBcNRI94D776g1eBHQyvkbJk6rH5Hzk5sfRl-2F8ZFHzGKu2TKJ6cf4iGJLcRPR3F6XD8VmwXg0rD-2Bs0uzD0t7rvz9hSuGlpKwScSTEq4eHIQ-2BUA2ucqOHmDMvP8sTgd1OaFO1oMvrt5qawU18Me5waEBc1LDtZKbPnLw8h-2FytF-2FUMsDp5nHW2kb90CtZ5-2FKeioiCMTMgsp4wT7-2B1O26oJmJAlgWUkLPo5PjVgo9TV6Sj5fhAPjPivwvC-2FL7yhc5f1yxcol6ckGYG144RzOghxZEmnDV64VkUC4I4uKVrMhU7uEUp26VJC3TKw3yqmA-3D-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+
+
+## Instructions
+Process this email content as a new task in the AI Employee system.

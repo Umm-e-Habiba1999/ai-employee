@@ -1,0 +1,57 @@
+# New Task from Email
+
+## Email Details
+- **From**: Ollama <hello@ollama.com>
+- **Subject**: Ollama's cloud is now much faster and reliable using the latest NVIDIA hardware 
+- **Date**: Sat, 14 Mar 2026 19:09:00 +0000
+
+## Email Content
+
+
+Ollama's cloud is updated to use NVIDIA's latest data center hardware: B300 for Moonshot AI's Kimi K2.5 and Z AI's GLM-5 models.
+ 
+This significantly improves the model performance with faster throughput and lower latency while maintaining reliable tool calls
+for integrations.
+ 
+All this works with Ollama's integrations via Ollama's launch command and over 45,000 custom integrations from GitHub.
+ 
+
+Ollama's Cloud [https://ollama.com/upgrade]
+
+ 
+Ollama's cloud subscription also comes with a free tier for you to experience the models.
+ 
+
+
+Kimi K2.5 with OpenClaw
+
+
+
+ollama launch openclaw --model kimi-k2.5:cloud
+ 
+Ollama is officially integrated into OpenClaw's default onboarding.
+ 
+Kimi K2.5 is one of the most recommended models for use with OpenClaw. It is now much faster and more reliable with Ollama's cloud
+using the latest hardware.
+ 
+By default, Ollama will enhance OpenClaw with web search so you always have the latest information if needed.
+ 
+
+
+Predictable costs
+
+Ollama's cloud [https://ollama.com/pricing] comes with fixed subscription rates at $0, $20, and $100. This means you won't wake up
+to surprise overage bills if you leave Claude Code or OpenClaw running. In the future, we are adding additional plans for higher
+usage.
+
+If you have any feedback, reply directly to this email or join Ollama's Discord channel [https://discord.gg/ollama].
+ 
+❤️ Ollama
+ 
+You are receiving this email because you opted-in to receive updates from Ollama
+Ollama, 744 High Street, Palo Alto, CA 94301
+Unsubscribe [https://app.loops.so/unsubscribe/cmmqp8qxl4hf30193gxx0er98/7a744d6dffe5ec12966aa0990b2ced6098c6f6e55bae02129837af7a85a493e0d010be8f3bee7ae33889ed81c76e13be56bbd800e09d622dd48e3502]
+
+
+## Instructions
+Process this email content as a new task in the AI Employee system.

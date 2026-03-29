@@ -1,0 +1,159 @@
+2026-03-28 01:47:06,042 - INFO - Browser started successfully
+2026-03-28 01:47:06,044 - INFO - Starting LinkedIn login process...
+2026-03-28 01:47:11,516 - INFO - Filled email field
+2026-03-28 01:47:12,575 - INFO - Filled password field
+2026-03-28 01:47:16,260 - INFO - Clicked login button
+2026-03-28 01:47:26,627 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-28 01:47:26,627 - INFO - Successfully logged into LinkedIn
+2026-03-28 01:47:26,630 - INFO - Starting LinkedIn post creation process...
+2026-03-28 01:47:36,877 - INFO - Clicked post button using: div[role='button'][tabindex='0']
+2026-03-28 01:48:03,911 - ERROR - Could not find text box with any selector
+2026-03-28 01:48:05,243 - INFO - Browser stopped successfully
+2026-03-28 02:11:59,238 - INFO - Browser started successfully
+2026-03-28 02:11:59,245 - INFO - Starting LinkedIn login process...
+2026-03-28 02:12:05,683 - INFO - Filled email field
+2026-03-28 02:12:06,753 - INFO - Filled password field
+2026-03-28 02:12:10,618 - INFO - Clicked login button
+2026-03-28 02:12:21,104 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-28 02:12:21,106 - INFO - Successfully logged into LinkedIn
+2026-03-28 02:12:21,107 - INFO - Starting LinkedIn post creation process...
+2026-03-28 02:12:31,448 - INFO - Clicked post button using: div[role='button'][tabindex='0']
+2026-03-28 02:12:33,464 - INFO - Waiting for post modal to open...
+2026-03-28 02:12:43,473 - WARNING - Post modal not found, continuing anyway...
+2026-03-28 02:13:11,560 - ERROR - Could not find text box with any selector
+2026-03-28 02:13:12,506 - INFO - Browser stopped successfully
+2026-03-28 02:18:53,727 - INFO - Browser started successfully
+2026-03-28 02:18:53,731 - INFO - Starting LinkedIn login process...
+2026-03-28 02:19:10,535 - ERROR - Timeout during login process: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("input#username") to be visible
+
+2026-03-28 02:19:10,543 - INFO - Starting LinkedIn post creation process...
+2026-03-28 02:19:10,549 - INFO - Navigating to LinkedIn feed...
+2026-03-28 02:19:30,366 - ERROR - Post button not found after trying all selectors
+2026-03-28 02:19:31,010 - INFO - Browser stopped successfully
+2026-03-28 02:24:13,554 - INFO - Browser started successfully
+2026-03-28 02:24:13,560 - INFO - Starting LinkedIn login process...
+2026-03-28 02:24:13,561 - INFO - Login attempt 1/2
+2026-03-28 02:24:20,002 - INFO - Found email field using: input#username
+2026-03-28 02:24:20,094 - INFO - Filled email field
+2026-03-28 02:24:21,176 - INFO - Filled password field
+2026-03-28 02:24:26,038 - INFO - Clicked login button
+2026-03-28 02:24:31,051 - INFO - Login successful - redirected to feed
+2026-03-28 02:24:45,390 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-28 02:24:45,391 - INFO - Successfully logged into LinkedIn
+2026-03-28 02:24:45,392 - INFO - Starting LinkedIn post creation process...
+2026-03-28 02:24:55,617 - INFO - Clicked post button using: div[role='button'][tabindex='0']
+2026-03-28 02:24:57,619 - INFO - Waiting for post modal to open...
+2026-03-28 02:25:58,889 - ERROR - Post modal not found after 20 seconds
+2026-03-28 02:25:59,870 - INFO - Browser stopped successfully
+2026-03-28 02:26:28,395 - INFO - Browser started successfully
+2026-03-28 02:26:28,396 - INFO - Starting LinkedIn login process...
+2026-03-28 02:26:28,396 - INFO - Login attempt 1/2
+2026-03-28 02:26:35,910 - INFO - Found email field using: input#username
+2026-03-28 02:26:36,014 - INFO - Filled email field
+2026-03-28 02:26:37,102 - INFO - Filled password field
+2026-03-28 02:26:41,460 - INFO - Clicked login button
+2026-03-28 02:26:46,483 - INFO - Login successful - redirected to feed
+2026-03-28 02:26:58,515 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-28 02:26:58,516 - INFO - Successfully logged into LinkedIn
+2026-03-28 02:26:58,517 - INFO - Starting LinkedIn post creation process...
+2026-03-28 02:27:08,875 - INFO - Clicked post button using: div[role='button'][tabindex='0']
+2026-03-28 02:27:10,890 - INFO - Waiting for post modal to open...
+2026-03-28 02:28:12,030 - ERROR - Post modal not found after 20 seconds
+2026-03-28 02:28:13,268 - INFO - Browser stopped successfully
+2026-03-28 03:05:59,937 - INFO - Browser started successfully
+2026-03-28 03:05:59,964 - INFO - Starting LinkedIn login process...
+2026-03-28 03:05:59,965 - INFO - Login attempt 1/2
+2026-03-28 03:06:06,264 - INFO - Found email field using: input#username
+2026-03-28 03:06:06,330 - INFO - Filled email field
+2026-03-28 03:06:07,420 - INFO - Filled password field
+2026-03-28 03:06:10,910 - INFO - Clicked login button
+2026-03-28 03:06:15,949 - INFO - Login successful - redirected to feed
+2026-03-28 03:06:21,283 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-28 03:06:21,284 - INFO - Successfully logged into LinkedIn
+2026-03-28 03:06:21,285 - INFO - Starting LinkedIn post creation process...
+2026-03-28 03:06:26,300 - WARNING - Could not click button.share-box-feed-entry__trigger: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("button.share-box-feed-entry__trigger") to be visible
+
+2026-03-28 03:06:31,307 - WARNING - Could not click span:has-text("Start a post"): Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("span:has-text(\"Start a post\")") to be visible
+
+2026-03-28 03:06:36,464 - WARNING - Could not click button[aria-label*="Start a post"]: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("button[aria-label*=\"Start a post\"]") to be visible
+
+2026-03-28 03:06:41,485 - WARNING - Could not click div.share-box-feed-entry: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div.share-box-feed-entry") to be visible
+
+2026-03-28 03:06:41,485 - ERROR - Post button not found after trying all selectors
+2026-03-28 03:06:42,730 - INFO - Browser stopped successfully
+2026-03-28 03:15:35,984 - INFO - Browser started successfully
+2026-03-28 03:15:36,005 - INFO - Starting LinkedIn login process...
+2026-03-28 03:15:36,038 - INFO - Login attempt 1/2
+2026-03-28 03:15:42,475 - INFO - Found email field using: input#username
+2026-03-28 03:15:42,527 - INFO - Filled email field
+2026-03-28 03:15:43,686 - INFO - Filled password field
+2026-03-28 03:15:47,350 - INFO - Clicked login button
+2026-03-28 03:15:52,382 - INFO - Login successful - redirected to feed
+2026-03-28 03:15:57,728 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-28 03:15:57,728 - INFO - Successfully logged into LinkedIn
+2026-03-28 03:15:57,729 - INFO - Starting LinkedIn post creation process...
+2026-03-28 03:15:57,730 - INFO - Waiting for feed to fully load...
+2026-03-28 03:16:27,747 - ERROR - Timeout during post creation: Timeout 30000ms exceeded.
+2026-03-28 03:16:28,912 - INFO - Browser stopped successfully
+2026-03-29 19:57:02,444 - INFO - Browser started successfully
+2026-03-29 19:57:02,444 - INFO - Starting LinkedIn login process...
+2026-03-29 19:57:02,445 - INFO - Login attempt 1/2
+2026-03-29 19:57:09,350 - INFO - Found email field using: input#username
+2026-03-29 19:57:09,440 - INFO - Filled email field
+2026-03-29 19:57:10,509 - INFO - Filled password field
+2026-03-29 19:57:14,570 - INFO - Clicked login button
+2026-03-29 19:57:19,637 - INFO - Login successful - redirected to feed
+2026-03-29 19:57:19,637 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-29 19:57:19,638 - INFO - Successfully logged into LinkedIn
+2026-03-29 19:57:19,638 - INFO - Starting LinkedIn post creation process...
+2026-03-29 19:57:24,647 - INFO - Feed URL: https://www.linkedin.com/feed/
+2026-03-29 19:58:04,709 - ERROR - Feed did not load properly
+2026-03-29 19:58:05,883 - INFO - Browser stopped successfully
+2026-03-29 20:04:39,095 - INFO - Browser started successfully
+2026-03-29 20:04:39,109 - INFO - Starting LinkedIn login process...
+2026-03-29 20:04:39,111 - INFO - Login attempt 1/2
+2026-03-29 20:04:45,433 - INFO - Found email field using: input#username
+2026-03-29 20:04:45,511 - INFO - Filled email field
+2026-03-29 20:04:46,624 - INFO - Filled password field
+2026-03-29 20:04:50,714 - INFO - Clicked login button
+2026-03-29 20:04:55,744 - INFO - Login successful - redirected to feed
+2026-03-29 20:04:55,753 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-29 20:04:55,759 - INFO - Successfully logged into LinkedIn
+2026-03-29 20:04:55,767 - INFO - Starting LinkedIn post creation process...
+2026-03-29 20:05:00,777 - INFO - Feed URL: https://www.linkedin.com/feed/
+2026-03-29 20:05:40,851 - ERROR - Feed did not load properly
+2026-03-29 20:05:41,774 - INFO - Browser stopped successfully
+2026-03-29 20:10:12,156 - INFO - Browser started successfully
+2026-03-29 20:10:12,163 - INFO - Starting LinkedIn login process...
+2026-03-29 20:10:12,173 - INFO - Login attempt 1/2
+2026-03-29 20:10:18,421 - INFO - Found email field using: input#username
+2026-03-29 20:10:18,535 - INFO - Filled email field
+2026-03-29 20:10:19,658 - INFO - Filled password field
+2026-03-29 20:10:23,518 - INFO - Clicked login button
+2026-03-29 20:10:28,538 - INFO - Login successful - redirected to feed
+2026-03-29 20:10:28,539 - INFO - URL after login: https://www.linkedin.com/feed/
+2026-03-29 20:10:28,540 - INFO - Successfully logged into LinkedIn
+2026-03-29 20:10:28,545 - INFO - Starting LinkedIn post creation process...
+2026-03-29 20:10:33,553 - INFO - Feed URL: https://www.linkedin.com/feed/
+2026-03-29 20:10:33,555 - INFO - Feed loaded - proceeding
+2026-03-29 20:10:48,061 - INFO - Clicked 'Start a post' using: div[aria-label='Start a post']
+2026-03-29 20:10:53,526 - INFO - Screenshot saved: debug_step_start_post.png
+2026-03-29 20:10:53,527 - INFO - Waiting for composer textbox...
+2026-03-29 20:10:54,412 - INFO - Composer ready: div.ql-editor[contenteditable='true']
+2026-03-29 20:10:57,041 - INFO - Filled post content (85 characters)
+2026-03-29 20:10:57,289 - INFO - Screenshot saved: debug_step_fill_textbox.png
+2026-03-29 20:10:57,290 - INFO - Looking for Post submit button...
+2026-03-29 20:10:58,044 - INFO - Clicked submit button using: button.share-actions__primary-action
+2026-03-29 20:11:06,285 - INFO - Screenshot saved: debug_step_submit_post.png
+2026-03-29 20:11:06,286 - INFO - LinkedIn post created successfully!
+2026-03-29 20:11:07,821 - INFO - Browser stopped successfully

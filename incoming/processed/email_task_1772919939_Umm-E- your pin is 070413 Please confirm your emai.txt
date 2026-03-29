@@ -1,0 +1,41 @@
+# New Task from Email
+
+## Email Details
+- **From**: LinkedIn <security-noreply@linkedin.com>
+- **Subject**: Umm-E-, your pin is 070413. Please confirm your email address.
+- **Date**: Sat, 7 Mar 2026 16:45:01 +0000 (UTC)
+
+## Email Content
+Umm-E-, your pin is 070413. Please confirm your email address
+
+Thank you for signing up
+Enter this code or click the button below to confirm your email.
+
+070413
+
+
+Your privacy is important
+
+We may send you member updates, recruiter messages, job suggestions, reminders and promotional messages from us and our partners. You can change your preferences anytime.
+https://www.linkedin.com/comm/psettings/email-controls?lipi=urn%3Ali%3Apage%3Aemail_email_confirm_your_email_with_pin_single_01%3BCSMvOOvSSd%2BPtNvYmSTumg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=3PBiwkpR1dTY81&trk=eml-email_confirm_your_email_with_pin_single_01-update~email~preferences-0-glimmer&trkEmail=eml-email_confirm_your_email_with_pin_single_01-update~email~preferences-0-glimmer-null-s54ll1~mmgk0lmr~bd-null-null&eid=s54ll1-mmgk0lmr-bd
+
+
+Confirm your email
+https://www.linkedin.com/comm/psettings/email/confirm?id=7436089529066811392&ct=1772901899561&sig=2UEiUaRMldTY81&crua=neptune%2Fonboarding%2Estart&lipi=urn%3Ali%3Apage%3Aemail_email_confirm_your_email_with_pin_single_01%3BCSMvOOvSSd%2BPtNvYmSTumg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=3PBiwkpR1dTY81&trk=eml-email_confirm_your_email_with_pin_single_01-confirm~pin~email-0-glimmer&trkEmail=eml-email_confirm_your_email_with_pin_single_01-confirm~pin~email-0-glimmer-null-s54ll1~mmgk0lmr~bd-null-null&eid=s54ll1-mmgk0lmr-bd
+
+      
+
+----------------------------------------
+
+This email was intended for Umm-E- Habiba (--)
+Learn why we included this: https://www.linkedin.com/help/linkedin/answer/4788?lang=en&lipi=urn%3Ali%3Apage%3Aemail_email_confirm_your_email_with_pin_single_01%3BCSMvOOvSSd%2BPtNvYmSTumg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=3PBiwkpR1dTY81&trk=eml-email_confirm_your_email_with_pin_single_01-SecurityHelp-0-textfooterglimmer&trkEmail=eml-email_confirm_your_email_with_pin_single_01-SecurityHelp-0-textfooterglimmer-null-s54ll1~mmgk0lmr~bd-null-null&eid=s54ll1-mmgk0lmr-bd
+You are receiving LinkedIn notification emails.
+
+
+Help: https://www.linkedin.com/help/linkedin/answer/67?lang=en&lipi=urn%3Ali%3Apage%3Aemail_email_confirm_your_email_with_pin_single_01%3BCSMvOOvSSd%2BPtNvYmSTumg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=3PBiwkpR1dTY81&trk=eml-email_confirm_your_email_with_pin_single_01-help-0-textfooterglimmer&trkEmail=eml-email_confirm_your_email_with_pin_single_01-help-0-textfooterglimmer-null-s54ll1~mmgk0lmr~bd-null-null&eid=s54ll1-mmgk0lmr-bd
+
+© 2026 LinkedIn Corporation, 1zwnj000 West Maude Avenue, Sunnyvale, CA 94085.
+LinkedIn and the LinkedIn logo are registered trademarks of LinkedIn.
+
+## Instructions
+Process this email content as a new task in the AI Employee system.

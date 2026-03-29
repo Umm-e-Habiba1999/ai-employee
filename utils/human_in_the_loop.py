@@ -13,13 +13,14 @@ from typing import Dict, Any
 class HumanInTheLoop:
     """Handles the approval workflow for tasks requiring human review"""
 
-    def __init__(self, vault_path="./vault"):
+    def __init__(self, vault_path="./vault", linkedin_poster=None):
         self.vault_path = Path(vault_path)
         self.needs_action_path = self.vault_path / "Needs_Action"
         self.plans_path = self.vault_path / "Plans"
         self.pending_approval_path = self.vault_path / "Pending_Approval"
         self.approved_path = self.vault_path / "Approved"
         self.logs_path = Path("logs")
+        self.linkedin_poster = linkedin_poster
 
         # Ensure directories exist
         self.pending_approval_path.mkdir(exist_ok=True)
@@ -31,6 +32,14 @@ class HumanInTheLoop:
         plan_files = list(self.plans_path.glob("*.md"))
 
         for plan_file in plan_files:
+            # Check if a draft already exists for this plan to avoid duplication
+            draft_name = f"draft_{plan_file.stem}.md"
+            draft_path = self.pending_approval_path / draft_name
+
+            if draft_path.exists():
+                self.log_event(f"Draft already exists for plan {plan_file.name}, skipping")
+                continue
+
             self.process_single_plan(plan_file)
 
     def process_single_plan(self, plan_file: Path):
@@ -124,6 +133,13 @@ class HumanInTheLoop:
 
     def monitor_approved_actions(self):
         """Monitor the Approved directory for actions to execute"""
+        # IMPORTANT: This method should NOT be called in normal operation
+        # The LinkedInWatcher is responsible for processing approved files
+        # to avoid race conditions. This method is kept for legacy compatibility
+        # but should not be actively used by the main workflow.
+        import warnings
+        warnings.warn("monitor_approved_actions should not be called by main workflow - use LinkedInWatcher instead")
+
         approved_files = list(self.approved_path.glob("*"))
 
         for approved_file in approved_files:
@@ -136,17 +152,49 @@ class HumanInTheLoop:
             # In a real implementation, this would execute the actual action
             self.log_event(f"Executing approved action: {approved_file.name}")
 
-            # After execution, we might move the file to a Done folder
-            # For now, we'll just log the execution
-            done_path = self.vault_path / "Done"
-            done_path.mkdir(exist_ok=True)
+            # Extract task information from the approved file to generate a LinkedIn post
+            task_title = "AI Task Completed"
+            task_description = "A task was completed by the AI Employee system"
 
-            # Move the approved file to Done after execution
-            final_path = done_path / approved_file.name
-            shutil.move(str(approved_file), str(final_path))
+            # Try to extract more meaningful information from the file
+            try:
+                with open(approved_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
 
-            self.log_event(f"Completed execution of: {final_path.name}")
+                # Look for plan information in the draft file
+                lines = content.split('\n')
+                for line in lines:
+                    if line.startswith('**Generated from Plan:**'):
+                        plan_file = line.split(':')[-1].strip()
+                        task_title = f"Completed: {plan_file}"
+                        break
+                    elif 'Plan Summary' in line:
+                        # Look for the next few lines to extract task details
+                        for i in range(lines.index(line)+1, min(lines.index(line)+10, len(lines))):
+                            if '## Objective' in lines[i]:
+                                # Extract the next line which should contain the objective
+                                if i+1 < len(lines):
+                                    obj_line = lines[i+1].strip()
+                                    if obj_line.startswith('#'):
+                                        task_description = obj_line[1:].strip()
+                                    else:
+                                        task_description = obj_line
+                                    break
+            except Exception as e:
+                self.log_event(f"Could not extract task details from {approved_file}: {e}")
 
+            # Note: The LinkedInWatcher module now handles posting to LinkedIn
+            # and moving files from Approved to Done after successful posting.
+            # The human_in_the_loop no longer moves files to Done to avoid
+            # race conditions with the LinkedInWatcher.
+
+            self.log_event(f"Completed execution of task: {approved_file.name}")
+
+        except FileNotFoundError:
+            # Handle case where file was removed by another process
+            self.log_event(f"File not found when trying to execute: {approved_file.name}")
+            # Log but continue processing other files
+            return
         except Exception as e:
             error_msg = f"Error executing approved action {approved_file}: {str(e)}"
             print(error_msg)

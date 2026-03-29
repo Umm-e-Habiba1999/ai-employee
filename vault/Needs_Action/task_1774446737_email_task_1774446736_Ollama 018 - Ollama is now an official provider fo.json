@@ -1,0 +1,15 @@
+{
+  "id": "task_1774446737_email_task_1774446736_Ollama 018 - Ollama is now an official provider fo",
+  "title": "Process: email_task_1774446736_Ollama 018 - Ollama is now an official provider fo.txt",
+  "description": "New file received: email_task_1774446736_Ollama 018 - Ollama is now an official provider fo.txt",
+  "source_file": "incoming\\email_task_1774446736_Ollama 018 - Ollama is now an official provider fo.txt",
+  "content_preview": "# New Task from Email\n\n## Email Details\n- **From**: Ollama <hello@ollama.com>\n- **Subject**: Ollama 0.18 - Ollama is now an official provider for OpenClaw\n- **Date**: Mon, 16 Mar 2026 18:11:30 +0000\n\n## Email Content\n\n\n\n\nOllama is now an official provider for OpenClaw. This means Ollama can now be selected directly through OpenClaw's onboarding.\n\n\u00a0\n\n\n\nopenclaw onboard --auth-choice ollama\n\n\n\n\u00a0\n\n\n\n\n\n\n\n\n\nMore information: https://docs.openclaw.ai/providers/ollama [https://docs.openclaw.ai/provider...",
+  "created_at": "2026-03-25T18:52:17.435511",
+  "file_type": ".txt",
+  "status": "processed",
+  "priority": "medium",
+  "original_file_path": "incoming\\email_task_1774446736_Ollama 018 - Ollama is now an official provider fo.txt",
+  "plan_generated": "plan_task_1774446737_email_task_1774446736_Ollama 018 - Ollama is now an official provider fo",
+  "processed_at": "2026-03-25T18:52:26.385471",
+  "processing_completed": true
+}

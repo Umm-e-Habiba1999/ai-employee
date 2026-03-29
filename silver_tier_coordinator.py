@@ -16,6 +16,8 @@ from utils.planning_layer import PlanningLayer
 from utils.human_in_the_loop import HumanInTheLoop
 from utils.email_mcp_tool import EmailMCPTool
 from utils.gmail_watcher import GmailWatcher
+from utils.linkedin_poster import LinkedInPoster
+from utils.linkedin_watcher import LinkedInWatcher
 
 # Load environment variables
 load_dotenv()
@@ -32,8 +34,10 @@ class SilverTierCoordinator:
         self.file_watcher = FileWatcher(self.incoming_path, self.vault_path)
         self.gmail_watcher = GmailWatcher(self.incoming_path, self.logs_path)
         self.planning_layer = PlanningLayer(self.vault_path)
-        self.human_in_loop = HumanInTheLoop(self.vault_path)
         self.email_tool = EmailMCPTool(self.vault_path)
+        self.linkedin_poster = LinkedInPoster(self.logs_path)
+        self.linkedin_watcher = LinkedInWatcher(vault_path=self.vault_path, logs_path=self.logs_path)
+        self.human_in_loop = HumanInTheLoop(self.vault_path, self.linkedin_poster)
 
         # Ensure logs directory exists
         self.logs_path.mkdir(exist_ok=True)
@@ -86,9 +90,11 @@ class SilverTierCoordinator:
             self.log_event("Processing needs action tasks for planning")
             self.planning_layer.process_needs_action_tasks()
 
-            # Process plans to determine if approval is needed
+            # Process plans to determine if approval is needed (but don't monitor approved actions)
+            # NOTE: Only process the creation of approval drafts, not execution of approved tasks
+            # Approved task execution is handled by LinkedInWatcher to avoid race conditions
             self.log_event("Processing plans for approval workflow")
-            self.human_in_loop.process_approval_workflow()
+            self.human_in_loop.process_plans_for_approval()
 
             self.log_event("Silver Tier workflow cycle completed successfully")
 
@@ -105,6 +111,7 @@ class SilverTierCoordinator:
         self.running = True
         self.start_file_watcher()
         self.start_gmail_watcher()
+        self.linkedin_watcher.start_watching()
 
         try:
             while self.running:
@@ -119,6 +126,7 @@ class SilverTierCoordinator:
                 self.file_watcher_thread.join(timeout=5)
             if self.gmail_watcher_thread:
                 self.gmail_watcher_thread.join(timeout=5)
+            self.linkedin_watcher.stop_watching()
 
         self.log_event("Silver Tier system shutting down")
 
@@ -195,7 +203,11 @@ class SilverTierCoordinator:
 
     def process_incoming_tasks(self):
         """Process each file in incoming/ folder into structured tasks under vault/Needs_Action"""
-        incoming_files = list(self.incoming_path.glob("*"))
+        # Only process files that are not in the processed subdirectory
+        incoming_files = []
+        for item in self.incoming_path.iterdir():
+            if item.is_file() and item.suffix.lower() != '.tmp' and item.name != 'processed':
+                incoming_files.append(item)
 
         for incoming_file in incoming_files:
             if incoming_file.is_file() and incoming_file.suffix.lower() != '.tmp':
@@ -222,9 +234,14 @@ class SilverTierCoordinator:
             # Look for the approval section and check if it has been approved
             # Check for checked box "[x]" next to "Yes, proceed with execution"
             if "[x] Yes, proceed with execution" in content or "[X] Yes, proceed with execution" in content:
-                # Move to Approved folder
+                # Check if an approved file with the same name already exists to avoid duplicates
                 approved_path = self.vault_path / "Approved"
                 destination = approved_path / pending_file.name
+
+                if destination.exists():
+                    self.log_event(f"Approved file already exists, skipping: {pending_file.name}")
+                    continue
+
                 import shutil
                 shutil.move(str(pending_file), str(destination))
                 self.log_event(f"Approved draft moved to Approved folder: {pending_file.name}")
@@ -307,7 +324,7 @@ Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
             return {"sent": False, "type": notification_type, "simulated": True, "dry_run": is_dry_run}
 
     def update_dashboard(self):
-        """Update dashboard with current counts: needs_action, in_progress, approval, done_today"""
+        """Update dashboard with current counts: needs_action, in_progress, approval, done_today, linkedin_posts"""
         import json
 
         # Count items in each category
@@ -327,6 +344,17 @@ Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
                 file_ctime = dt.fromtimestamp(file.stat().st_ctime).date()
                 if file_ctime == today:
                     done_today_count += 1
+
+        # Count LinkedIn posts made today by checking the linkedin_poster log
+        linkedin_posts_today = 0
+        linkedin_log_file = self.logs_path / "linkedin_poster.log"
+        if linkedin_log_file.exists():
+            with open(linkedin_log_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+                today_str = datetime.now().strftime('%Y-%m-%d')
+                for line in lines:
+                    if today_str in line and "LinkedIn post created" in line:
+                        linkedin_posts_today += 1
 
         # Update dashboard file
         dashboard_file = self.vault_path / "Dashboard.md"
@@ -357,6 +385,21 @@ Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
                 f"- **Completed Today**: `{done_today_count}`",
                 content
             )
+
+            # Add or update LinkedIn posts if that section exists
+            if "**LinkedIn Posts Today**" in content:
+                content = re.sub(
+                    r"- \*\*LinkedIn Posts Today\*\*: `\d+`",
+                    f"- **LinkedIn Posts Today**: `{linkedin_posts_today}`",
+                    content
+                )
+            else:
+                # If the LinkedIn section doesn't exist, add it after Completed Today
+                content = re.sub(
+                    r"(- \*\*Completed Today\*\*: `\d+`)",
+                    r"\1\n- **LinkedIn Posts Today**: `{}`".format(linkedin_posts_today),
+                    content
+                )
 
             # Update the last updated timestamp
             content = re.sub(
@@ -392,6 +435,7 @@ status: active
 - **Tasks in Progress**: `{in_progress_count}`
 - **Awaiting Approval**: `{approval_count}`
 - **Completed Today**: `{done_today_count}`
+- **LinkedIn Posts Today**: `{linkedin_posts_today}`
 
 ## Today's Plan
 ```tasks
@@ -444,13 +488,12 @@ from "Business_Goals.md"
             self.log_event("Checking for approved drafts")
             self.move_approved_drafts()
 
-            # 5. Execute any approved actions
-            self.log_event("Executing approved actions")
-            self.human_in_loop.monitor_approved_actions()
-
-            # 6. Update dashboard with current counts
+            # 5. Update dashboard with current counts
             self.log_event("Updating dashboard")
             self.update_dashboard()
+
+            # Note: LinkedInWatcher handles approved actions (posting to LinkedIn and moving files)
+            # to avoid race conditions between HumanInTheLoop and LinkedInWatcher
 
             self.log_event("Silver Tier workflow cycle completed successfully")
 

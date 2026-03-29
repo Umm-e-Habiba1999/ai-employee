@@ -1,0 +1,36 @@
+# New Task from Email
+
+## Email Details
+- **From**: Ollama <hello@ollama.com>
+- **Subject**: Ollama Pro annual plan
+- **Date**: Tue, 24 Mar 2026 12:08:02 +0000
+
+## Email Content
+
+ 
+
+https://ollama.com/upgrade?plan=pro&interval=year
+
+
+New Pro annual plan
+
+Ollama's Pro plan now has an annual option. For $200/year, you get 2 months free compared to the monthly plan.
+ 
+
+Upgrade to Pro annual [https://ollama.com/upgrade?plan=pro&interval=year]
+
+ 
+Ollama Pro and Max give you fast, reliable access to the newest open models like Nemotron-3-Super, Kimi-K2.5, MiniMax-M2.7, GLM-5,
+and GPT-OSS with built-in support for OpenClaw, Claude Code, and more.
+ 
+If you have any feedback, reply directly to this email or join Ollama's Discord channel [https://discord.gg/ollama].
+ 
+❤️ Ollama
+ 
+You are receiving this email because you opted-in to receive updates from Ollama
+Ollama, 744 High Street, Palo Alto, CA 94301
+Unsubscribe [https://app.loops.so/unsubscribe/cmn4klvya01l9016n8agtcvx8/536b8e1bd5e78642b25ab513e521bc8b8d8c1f3f86dbe70081d615c9faa69515094d87f32a793fdd618c793654037faf83c89351b62ef6198f254755]
+
+
+## Instructions
+Process this email content as a new task in the AI Employee system.

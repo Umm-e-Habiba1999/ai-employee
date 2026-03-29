@@ -28,10 +28,30 @@ class PlanningLayer:
         task_files = list(self.needs_action_path.glob("*.json"))
 
         if not task_files:
-            print(f"No tasks found in {self.needs_action_path}")
+            self.log_event("No tasks found in Needs_Action directory")
             return
 
         for task_file in task_files:
+            # Check if task has already been processed to avoid re-processing
+            try:
+                with open(task_file, 'r', encoding='utf-8') as f:
+                    task_data = json.load(f)
+
+                # Skip if task is already processed
+                if task_data.get('status') == 'processed' and task_data.get('plan_generated'):
+                    self.log_event(f"Skipping already processed task: {task_file.name}")
+                    continue
+
+                # Skip if task has been moved to plans (check if plan exists)
+                expected_plan_id = f"plan_{task_data.get('id', '')}"
+                expected_plan_file = self.plans_path / f"{expected_plan_id}.md"
+                if expected_plan_file.exists():
+                    self.log_event(f"Plan already exists for task: {task_file.name}, skipping")
+                    continue
+            except Exception as e:
+                self.log_event(f"Could not read task file {task_file.name}: {e}")
+                continue
+
             self.process_single_task(task_file)
 
     def process_single_task(self, task_file: Path):
@@ -55,8 +75,7 @@ class PlanningLayer:
             # Log the event
             self.log_event(f"Generated plan for task: {task_file.name} -> {plan_file_path.name}")
 
-            # Mark task as processed by moving it to a temporary processed directory
-            # or update its status in the JSON file
+            # Mark task as processed by updating its status in the JSON file
             self.mark_task_as_processed(task_file, plan_id)
 
         except Exception as e:
@@ -249,6 +268,7 @@ The original content contains: {task_data.get('content_preview', 'N/A')[:200]}..
             task_data['status'] = 'processed'
             task_data['plan_generated'] = plan_id
             task_data['processed_at'] = datetime.now().isoformat()
+            task_data['processing_completed'] = True  # Add explicit completion flag
 
             # Write back the updated data
             with open(task_file, 'w', encoding='utf-8') as f:

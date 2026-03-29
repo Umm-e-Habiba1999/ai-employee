@@ -25,6 +25,7 @@ class GmailWatcher:
         self.incoming_path = Path(incoming_path)
         self.logs_path = Path(logs_path)
         self.last_checked = None
+        self.processed_emails_file = self.logs_path / "processed_emails.json"
 
         # Ensure directories exist
         self.incoming_path.mkdir(exist_ok=True)
@@ -42,10 +43,33 @@ class GmailWatcher:
         )
         self.logger = logging.getLogger(__name__)
 
+        # Load processed email IDs to avoid duplicates
+        self.processed_emails = self.load_processed_emails()
+
         # Check if email credentials are provided
         if not self.email_username or not self.email_password:
             self.logger.error("Email credentials not found in .env file")
             raise ValueError("EMAIL_USERNAME and EMAIL_PASSWORD must be set in .env file")
+
+    def load_processed_emails(self):
+        """Load the set of already processed email IDs to prevent duplicates"""
+        try:
+            if self.processed_emails_file.exists():
+                with open(self.processed_emails_file, 'r', encoding='utf-8') as f:
+                    return set(json.load(f))
+            else:
+                return set()
+        except Exception as e:
+            self.logger.error(f"Error loading processed emails: {e}")
+            return set()
+
+    def save_processed_emails(self):
+        """Save the set of processed email IDs"""
+        try:
+            with open(self.processed_emails_file, 'w', encoding='utf-8') as f:
+                json.dump(list(self.processed_emails), f, indent=2)
+        except Exception as e:
+            self.logger.error(f"Error saving processed emails: {e}")
 
     def connect_to_gmail(self):
         """Connect to Gmail IMAP server"""
@@ -162,6 +186,13 @@ Process this email content as a new task in the AI Employee system.
                 # Parse the email
                 email_message = email.message_from_bytes(raw_email)
 
+                # Get email UID to track it
+                uid = email_id.decode() if isinstance(email_id, bytes) else str(email_id)
+
+                # Check if this email has already been processed
+                if uid in self.processed_emails:
+                    continue  # Skip already processed emails
+
                 # Check if this email is newer than our last check
                 email_date = email_message.get("Date")
                 if self.last_checked and email_date:
@@ -176,6 +207,9 @@ Process this email content as a new task in the AI Employee system.
                 # Convert email to task file
                 task_file = self.email_to_task_file(email_message)
                 if task_file:
+                    # Mark this email as processed
+                    self.processed_emails.add(uid)
+                    self.save_processed_emails()
                     processed_emails += 1
 
             # Update last checked time to now

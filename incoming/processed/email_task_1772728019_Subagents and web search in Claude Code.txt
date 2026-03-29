@@ -1,0 +1,81 @@
+# New Task from Email
+
+## Email Details
+- **From**: Ollama <hello@ollama.com>
+- **Subject**: Subagents and web search in Claude Code
+- **Date**: Tue, 17 Feb 2026 12:54:07 +0000
+
+## Email Content
+
+
+https://ollama.com/download
+
+Ollama now supports subagents and web search in Claude Code. No MCP servers or API keys required.
+
+
+Get started
+
+ 
+ollama launch claude --model minimax-m2.5:cloud
+ 
+It works with any model on Ollama's cloud.
+
+
+Subagents
+
+https://ollama.com/download
+
+ 
+Subagents can run tasks in parallel, such as file search, code exploration, and research, each in their own context.
+ 
+Some models will naturally trigger subagents when needed (minimax-m2.5, glm-5, kimi-k2.5), but you can force triggering subagents
+by telling the model to “use/spawn/create subagents”
+ 
+Example prompts:
+ 
+> spawn subagents to explore the auth flow, payment integration, and notification system
+ 
+> create subagents to map the database queries, trace the API routes, and catalog error handling patterns
+ 
+
+
+Web search
+
+https://ollama.com/download
+
+ 
+When a model needs current information, Ollama handles the search and returns results directly without any additional
+configuration. Subagents can leverage web search to research topics in parallel and come back with actionable results.
+ 
+Example prompts:
+ 
+> research the postgres 18 release notes, audit our queries for deprecated patterns, and create migration tasks
+ 
+> create 3 research agents to research how our top 3 competitors price their API tiers, compare against our current pricing, and
+draft recommendations
+
+
+Recommended models
+
+ * minimax-m2.5:cloud
+
+ * glm-5:cloud
+
+ * kimi-k2.5:cloud
+
+ 
+
+Download Ollama [https://ollama.com/download]
+
+ 
+If you have any feedback, reply directly to this email or join Ollama's Discord channel [https://discord.gg/ollama].
+ 
+❤️ Ollama
+ 
+You are receiving this email because you opted-in to receive updates from Ollama
+Ollama, 744 High Street, Palo Alto, CA 94301
+Unsubscribe [https://app.loops.so/unsubscribe/cmlqlucima4cg014ue0yf8q1f/641c646b980cb61a9b4b4d656d0bcc3131a3f754a99d3901664da4559fe3e15c3cbce7c66525035c1eb404791ee56fca3aa3d7ce7dbe3a8849f71b54]
+
+
+## Instructions
+Process this email content as a new task in the AI Employee system.

@@ -1,0 +1,47 @@
+2026-03-26 20:04:34,192 - INFO - Starting LinkedIn post for task: Test LinkedIn Post
+2026-03-26 20:04:34,192 - INFO - Task details: {
+  "title": "Test LinkedIn Post",
+  "description": "This is a test post from AI Employee system",
+  "content": "Testing LinkedIn auto post from AI Employee system!"
+}
+2026-03-26 20:04:34,193 - INFO - Generated post content for task: Test LinkedIn Post
+2026-03-26 20:04:34,194 - INFO - Post content preview: Process improvement in action! We've successfully automated: Test LinkedIn Post
+
+By streamlining Thi...
+2026-03-26 20:04:54,038 - INFO - Browser started successfully
+2026-03-26 20:04:54,039 - INFO - Starting LinkedIn login process...
+2026-03-26 20:05:00,813 - INFO - Filled email field
+2026-03-26 20:05:01,862 - INFO - Filled password field
+2026-03-26 20:05:07,235 - INFO - Clicked login button
+2026-03-26 20:05:12,283 - INFO - Successfully logged into LinkedIn
+2026-03-26 20:05:12,316 - INFO - Attempting to create LinkedIn post for task: Test LinkedIn Post
+2026-03-26 20:05:12,395 - INFO - Starting LinkedIn post creation process...
+2026-03-26 20:05:32,533 - ERROR - Could not find create post button with any selector
+2026-03-26 20:05:32,534 - ERROR - Failed to create LinkedIn post for task: Test LinkedIn Post
+2026-03-26 20:05:33,906 - INFO - Browser stopped successfully
+2026-03-26 20:12:13,675 - INFO - Starting LinkedIn post for task: Test LinkedIn Post
+2026-03-26 20:12:13,676 - INFO - Task details: {
+  "title": "Test LinkedIn Post",
+  "description": "Test",
+  "content": "Testing LinkedIn auto post"
+}
+2026-03-26 20:12:13,677 - INFO - Generated post content for task: Test LinkedIn Post
+2026-03-26 20:12:13,678 - INFO - Post content preview: Exciting update! Our AI Employee system just completed: Test LinkedIn Post
+
+This automation helps us...
+2026-03-26 20:12:16,973 - INFO - Browser started successfully
+2026-03-26 20:12:16,993 - INFO - Starting LinkedIn login process...
+2026-03-26 20:12:32,699 - ERROR - Timeout during login process: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("input#username") to be visible
+
+2026-03-26 20:12:32,702 - ERROR - Failed to login to LinkedIn for task: Test LinkedIn Post
+2026-03-26 20:12:34,048 - INFO - Browser stopped successfully
+2026-03-27 04:01:44,055 - INFO - Browser started successfully
+2026-03-27 04:01:44,201 - INFO - Starting LinkedIn login process...
+2026-03-27 04:01:51,405 - INFO - Filled email field
+2026-03-27 04:01:52,444 - INFO - Filled password field
+2026-03-27 04:01:56,124 - INFO - Clicked login button
+2026-03-27 04:02:01,149 - INFO - Successfully logged into LinkedIn
+2026-03-27 04:02:01,149 - INFO - Starting LinkedIn post creation process...
+2026-03-27 04:02:21,194 - ERROR - Could not find create post button with any selector

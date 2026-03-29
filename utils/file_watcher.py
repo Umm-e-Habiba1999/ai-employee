@@ -86,7 +86,8 @@ class FileWatcherHandler(FileSystemEventHandler):
                 "created_at": datetime.now().isoformat(),
                 "file_type": file_path.suffix.lower(),
                 "status": "pending",
-                "priority": "medium"  # Can be set based on content analysis
+                "priority": "medium",  # Can be set based on content analysis
+                "original_file_path": str(file_path)  # Track original file for reference
             }
 
             # Write the structured task to the Needs_Action directory
@@ -95,6 +96,19 @@ class FileWatcherHandler(FileSystemEventHandler):
 
             self.logger.info(f"Created structured task: {task_file_path}")
             self.log_to_system(f"Created structured task from file: {file_path.name}")
+
+            # Move the original file to a processed subdirectory to prevent reprocessing
+            processed_dir = self.incoming_path / "processed"
+            processed_dir.mkdir(exist_ok=True)
+            new_file_path = processed_dir / file_path.name
+            counter = 1
+            while new_file_path.exists():  # Handle potential name collisions
+                stem = file_path.stem
+                suffix = file_path.suffix
+                new_file_path = processed_dir / f"{stem}_{counter}{suffix}"
+                counter += 1
+            file_path.rename(new_file_path)
+            self.logger.info(f"Moved original file to processed: {new_file_path}")
 
         except Exception as e:
             self.logger.error(f"Error creating structured task from {file_path}: {e}")

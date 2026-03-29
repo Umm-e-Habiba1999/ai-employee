@@ -1,0 +1,73 @@
+2026-03-09 21:59:15,823 - INFO - LinkedIn poster initialized successfully
+2026-03-09 21:59:15,826 - INFO - Found 1 files in Approved folder
+2026-03-09 21:59:15,827 - INFO - Already processed files count: 0
+2026-03-09 21:59:15,827 - INFO - Found approved file: test_linkedin_post_1773075554.md
+2026-03-09 21:59:15,827 - INFO - Processing new approved task: test_linkedin_post_1773075554.md
+2026-03-09 21:59:15,828 - INFO - Starting processing of approved task: test_linkedin_post_1773075554.md
+2026-03-09 21:59:15,828 - INFO - File size: 787 bytes
+2026-03-09 21:59:15,828 - INFO - File created: 2026-03-09 21:59:14.843087
+2026-03-09 21:59:15,829 - INFO - Extracting task data from: test_linkedin_post_1773075554.md
+2026-03-09 21:59:15,878 - INFO - File content length: 755 characters
+2026-03-09 21:59:15,879 - INFO - Extracted title from plan: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:15,879 - INFO - Extracted task data: {
+  "title": "Completed: ** test_linkedin_posting_plan.md",
+  "description": "An automated task was completed by the AI Employee system",
+  "file_name": "test_linkedin_post_1773075554.md",
+  "file_path": "vault\\Approved\\test_linkedin_post_1773075554.md"
+}...
+2026-03-09 21:59:15,879 - INFO - Extracted task data for: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:15,879 - INFO - Task description preview: An automated task was completed by the AI Employee system...
+2026-03-09 21:59:15,879 - INFO - Processing task for LinkedIn posting: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:15,879 - INFO - Task details: {
+  "title": "Completed: ** test_linkedin_posting_plan.md",
+  "description": "An automated task was completed by the AI Employee system",
+  "file_name": "test_linkedin_post_1773075554.md",
+  "file_path": "vault\\Approved\\test_linkedin_post_1773075554.md"
+}...
+2026-03-09 21:59:15,880 - INFO - Attempting LinkedIn post (attempt 1/3) for: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:15,880 - INFO - Starting LinkedIn post for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:15,880 - INFO - Task details: {
+  "title": "Completed: ** test_linkedin_posting_plan.md",
+  "description": "An automated task was completed by the AI Employee system",
+  "file_name": "test_linkedin_post_1773075554.md",
+  "file_path": "vault\\Approved\\test_linkedin_post_1773075554.md"
+}
+2026-03-09 21:59:15,880 - INFO - Generated post content for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:29,984 - ERROR - Failed to start browser for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:29,984 - WARNING - Failed to post to LinkedIn (attempt 1): Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:29,984 - INFO - Retrying in 5 seconds... (2 attempts remaining)
+2026-03-09 21:59:34,984 - INFO - Attempting LinkedIn post (attempt 2/3) for: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:34,984 - INFO - Starting LinkedIn post for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:34,985 - INFO - Task details: {
+  "title": "Completed: ** test_linkedin_posting_plan.md",
+  "description": "An automated task was completed by the AI Employee system",
+  "file_name": "test_linkedin_post_1773075554.md",
+  "file_path": "vault\\Approved\\test_linkedin_post_1773075554.md"
+}
+2026-03-09 21:59:34,985 - INFO - Generated post content for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:34,987 - INFO - Post content preview: Exciting update! Our AI Employee system just completed: Completed: ** test_linkedin_posting_plan.md
+...
+2026-03-09 21:59:34,987 - ERROR - Failed to start browser: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2026-03-09 21:59:34,987 - ERROR - Failed to start browser for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:34,988 - WARNING - Failed to post to LinkedIn (attempt 2): Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:34,988 - INFO - Retrying in 5 seconds... (1 attempts remaining)
+2026-03-09 21:59:39,989 - INFO - Attempting LinkedIn post (attempt 3/3) for: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:39,989 - INFO - Starting LinkedIn post for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:39,990 - INFO - Task details: {
+  "title": "Completed: ** test_linkedin_posting_plan.md",
+  "description": "An automated task was completed by the AI Employee system",
+  "file_name": "test_linkedin_post_1773075554.md",
+  "file_path": "vault\\Approved\\test_linkedin_post_1773075554.md"
+}
+2026-03-09 21:59:39,990 - INFO - Generated post content for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:39,991 - INFO - Post content preview: Exciting update! Our AI Employee system just completed: Completed: ** test_linkedin_posting_plan.md
+...
+2026-03-09 21:59:39,991 - ERROR - Failed to start browser: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2026-03-09 21:59:39,991 - ERROR - Failed to start browser for task: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:39,992 - WARNING - Failed to post to LinkedIn (attempt 3): Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:39,992 - ERROR - Failed to post to LinkedIn after 3 attempts: Completed: ** test_linkedin_posting_plan.md
+2026-03-09 21:59:39,992 - INFO - Task processing result for test_linkedin_post_1773075554.md: FAILED
+2026-03-09 21:59:39,993 - ERROR - Failed to post to LinkedIn for task: test_linkedin_post_1773075554.md
+2026-03-09 21:59:39,997 - INFO - Moved failed task to Failed folder: failed_20260309_215939_test_linkedin_post_1773075554.md

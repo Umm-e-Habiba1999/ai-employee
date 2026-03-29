@@ -1,0 +1,32 @@
+# New Task from Email
+
+## Email Details
+- **From**: LinkedIn <security-noreply@linkedin.com>
+- **Subject**: Verify your email address
+- **Date**: Sat, 7 Mar 2026 16:51:10 +0000 (UTC)
+
+## Email Content
+You recently added a new email address to your LinkedIn account.
+
+To confirm the address paste the following link into your browser:
+
+https://www.linkedin.com/comm/psettings/email/confirm?id=7436091079369801728&ct=1772902269216&sig=0tKSioqX5jTY81&crua=&rup=&rupm=&lipi=urn%3Ali%3Apage%3Aemail_security_apr_email_confirm%3B5jak8aUEQHeP9lWUPfmeKg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=2Rk0z4IfNjTY81&trk=eml-security_apr_email_confirm-profile_prompt-0-confirm~email&trkEmail=eml-security_apr_email_confirm-profile_prompt-0-confirm~email-null-s54ll1~mmgk8i02~2n-null-null&eid=s54ll1-mmgk8i02-2n
+
+Once you do that, we'll ask you to sign in. Be sure to use the email address where you'd like to receive messages, invitations, requests, or other email when you do.
+
+Thanks for using LinkedIn!
+The LinkedIn Team
+
+----------------------------------------
+
+This email was intended for Umm-E- Habiba (--)
+Learn why we included this: https://www.linkedin.com/help/linkedin/answer/4788?lang=en&lipi=urn%3Ali%3Apage%3Aemail_security_apr_email_confirm%3B5jak8aUEQHeP9lWUPfmeKg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=2Rk0z4IfNjTY81&trk=eml-security_apr_email_confirm-SecurityHelp-0-textfooterglimmer&trkEmail=eml-security_apr_email_confirm-SecurityHelp-0-textfooterglimmer-null-s54ll1~mmgk8i02~2n-null-null&eid=s54ll1-mmgk8i02-2n
+You are receiving LinkedIn notification emails.
+
+Help: https://www.linkedin.com/help/linkedin/answer/67?lang=en&lipi=urn%3Ali%3Apage%3Aemail_security_apr_email_confirm%3B5jak8aUEQHeP9lWUPfmeKg%3D%3D&midToken=AQFFEerHaETxoQ&midSig=2Rk0z4IfNjTY81&trk=eml-security_apr_email_confirm-help-0-textfooterglimmer&trkEmail=eml-security_apr_email_confirm-help-0-textfooterglimmer-null-s54ll1~mmgk8i02~2n-null-null&eid=s54ll1-mmgk8i02-2n
+
+© 2026 LinkedIn Corporation, 1zwnj000 West Maude Avenue, Sunnyvale, CA 94085.
+LinkedIn and the LinkedIn logo are registered trademarks of LinkedIn.
+
+## Instructions
+Process this email content as a new task in the AI Employee system.
